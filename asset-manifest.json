@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sabbir-portfolio/static/css/main.d9b550c0.css",
+    "main.js": "/sabbir-portfolio/static/js/main.767b90cc.js",
+    "static/js/787.40e50863.chunk.js": "/sabbir-portfolio/static/js/787.40e50863.chunk.js",
+    "static/media/profile.png": "/sabbir-portfolio/static/media/profile.27391d06bb40fc44aa70.png",
+    "static/media/map.png": "/sabbir-portfolio/static/media/map.ddffc1c1a22644b84722.png",
+    "index.html": "/sabbir-portfolio/index.html",
+    "main.d9b550c0.css.map": "/sabbir-portfolio/static/css/main.d9b550c0.css.map",
+    "main.767b90cc.js.map": "/sabbir-portfolio/static/js/main.767b90cc.js.map",
+    "787.40e50863.chunk.js.map": "/sabbir-portfolio/static/js/787.40e50863.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9b550c0.css",
+    "static/js/main.767b90cc.js"
+  ]
+}
