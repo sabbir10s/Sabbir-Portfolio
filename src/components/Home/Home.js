@@ -5,6 +5,7 @@ import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
 import About from '../About/About';
+import Portfolio from '../Portfolio/Portfolio';
 
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
                     <a className='bg-secondary rounded-full p-2' href="https://www.facebook.com/"><FaFacebookF /></a>
                 </div>
                 <About />
+                <Portfolio />
             </div>
         </>
     );

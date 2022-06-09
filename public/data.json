@@ -1,0 +1,71 @@
+[
+    {
+      "_id": "62a19fa533a482858e4f1a3e",
+      "imgOne": "https://dailymockup.com/wp-content/uploads/edd/2019/07/free-website-mockup-1000x750.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1",
+      "imgTwo": "http://placehold.it/32x32",
+      "name": "NEXIQ",
+      "type": "",
+      "clientRepo": "https://github.com/sabbir10s/NEXIQ-client",
+      "serverRepo": "https://github.com/sabbir10s/NEXIQ-client",
+      "liveSite": "https://nexiq-1199a.web.app/",
+      "technology": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "JWT",
+        "React",
+        "Hook Form",
+        "Stripe",
+        "Tailwind CSS"
+      ],
+      "description": "NEXIQ is a full-stack website. In this project, I implemented user role management. A general user can purchase any product, manage her all orders and be able to pay for the order. An admin can upload a new product, manage all orders, see all users, create another admin."
+    },
+    {
+      "_id": "62a19fa5110935289d4ebf18",
+      "imgOne": "https://dailymockup.com/wp-content/uploads/edd/2019/07/free-website-mockup-1000x750.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1",
+      "imgTwo": "http://placehold.it/32x32",
+      "name": "NEXIQ",
+      "type": "",
+      "clientRepo": "https://github.com/sabbir10s/NEXIQ-client",
+      "serverRepo": "https://github.com/sabbir10s/NEXIQ-client",
+      "liveSite": "https://nexiq-1199a.web.app/",
+      "technology": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "JWT",
+        "React",
+        "Hook Form",
+        "Stripe",
+        "Tailwind CSS"
+      ],
+      "description": "NEXIQ is a full-stack website. In this project, I implemented user role management. A general user can purchase any product, manage her all orders and be able to pay for the order. An admin can upload a new product, manage all orders, see all users, create another admin."
+    },
+    {
+      "_id": "62a19fa5d80987322f93e148",
+      "imgOne": "https://dailymockup.com/wp-content/uploads/edd/2019/07/free-website-mockup-1000x750.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-1",
+      "imgTwo": "http://placehold.it/32x32",
+      "name": "NEXIQ",
+      "type": "",
+      "clientRepo": "https://github.com/sabbir10s/NEXIQ-client",
+      "serverRepo": "https://github.com/sabbir10s/NEXIQ-client",
+      "liveSite": "https://nexiq-1199a.web.app/",
+      "technology": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "JWT",
+        "React",
+        "Hook Form",
+        "Stripe",
+        "Tailwind CSS"
+      ],
+      "description": "NEXIQ is a full-stack website. In this project, I implemented user role management. A general user can purchase any product, manage her all orders and be able to pay for the order. An admin can upload a new product, manage all orders, see all users, create another admin."
+    }
+  ]
