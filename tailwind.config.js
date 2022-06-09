@@ -4,12 +4,14 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'primary': '#252734',
+      'primary': '#14274E',
       'secondary': '#c49b66',
       'accent': '#ff49db',
       'base': '#ffff',
       'base-100': '#E4E5EB',
       'base-200': '#CACBD6',
+      'base-300': '#9BA4B4',
+      'gray': '#394867',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

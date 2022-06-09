@@ -22,8 +22,9 @@ const Home = () => {
                     <button className='bg-base text-primary  text-2xl flex justify-center items-center  h-12 w-12 rounded-full shadow-2xl'><AiOutlineDownload /></button>
                 </div>
                 <div className='text-center mt-14'>
-                    <h1 className='text-5xl text-secondary'>Sabbir Ahmed</h1>
-                    <h1 className='text-xl mt-3'>I am a react developer</h1>
+                    <h1 className='text-xl text-secondary  mt-3'>React Developer</h1>
+                    <h1 className='text-5xl text-primary mt-3'>Sabbir Ahmed</h1>
+
                 </div>
 
                 <div className='flex justify-center items-center gap-5 py-5 text-base text-lg'>
