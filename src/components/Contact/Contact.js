@@ -27,8 +27,8 @@ const Contact = () => {
                 reverseOrder={false}
             />
             <h1 id="contact" className='text-4xl text-primary uppercase text-center my-12'>Contact Me</h1>
-            <div className='mx-32 mb-12'>
-                <div className='grid gap-5 grid-cols-2 '>
+            <div className='lg:mx-32 mb-12'>
+                <div className='grid gap-5 lg:grid-cols-2 '>
                     <div style={{
                         background: `url(${map})`,
                         backgroundSize: 'cover'

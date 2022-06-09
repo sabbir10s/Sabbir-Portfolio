@@ -13,7 +13,7 @@ const Portfolio = () => {
         <>
             <div>
                 <h1 className='text-4xl text-primary text-center uppercase'>Portfolio</h1>
-                <div className='mx-32 grid grid-cols-3 gap-5 mt-12'>
+                <div className='lg:mx-32 grid grid-cols-1 md:grid-cols-3 gap-5 mt-12'>
                     {
                         projects.map(project => <ProjectCart key={project._id} project={project} />)
                     }

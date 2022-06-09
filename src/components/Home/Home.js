@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <>
             <div className='bg-base-100 pb-10'>
-                <div className='bg-primary h-72'></div>
+                <div className='bg-primary h-52 lg:h-72'></div>
                 <div className='flex justify-center mt-[-90px] '>
                     <div className=' flex justify-center'>
                         <img className='w-[150px] bg-base-200 rounded-full' src={profile} alt="" />
