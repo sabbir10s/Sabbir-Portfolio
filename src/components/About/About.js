@@ -1,4 +1,14 @@
 import React from 'react';
+import { SiHtml5 } from 'react-icons/si';
+import { SiCss3 } from 'react-icons/si';
+import { SiMongodb } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si';
+import { SiJavascript } from 'react-icons/si';
+import { SiNodedotjs } from 'react-icons/si';
+import { SiFirebase } from 'react-icons/si';
+import { SiReact } from 'react-icons/si';
+import { SiBootstrap } from 'react-icons/si';
+
 
 const About = () => {
 
@@ -7,71 +17,45 @@ const About = () => {
         <>
             <div className='mt-28 uppercase mx-32'>
                 {/* <small>Who am i</small>
-                <h1 className='text-primary text-5xl   mb-7'>About Me</h1> */}
+                <h1 className='text-primary text-4xl   mb-7'>About Me</h1> */}
             </div>
             <div className='bg-base rounded-lg mb-16 flex items-center gap-5 mx-32 p-7'>
                 <div className='shrink w-[45%]'>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">HTML & CSS</span>
+                    <div className='grid grid-cols-3 gap-10 justify-items-center rounded-lg'>
+                        <div>
+                            <span className='text-4xl text-primary'><SiHtml5 /></span>
                         </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[85%]"></div>
+                        <div>
+                            <span className='text-4xl text-primary'><SiCss3 /></span>
                         </div>
-                    </div>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">Tailwind CSS</span>
+                        <div>
+                            <span className='text-4xl text-primary'><SiTailwindcss /></span>
                         </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[95%]"></div>
+                        <div>
+                            <span className='text-4xl text-primary'><SiBootstrap /></span>
                         </div>
-                    </div>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">JavaScript</span>
+                        <div>
+                            <span className='text-4xl text-primary'><SiJavascript /></span>
                         </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[80%]"></div>
+                        <div>
+                            <span className='text-4xl text-primary'><SiReact /></span>
                         </div>
-                    </div>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">React.js</span>
+                        <div>
+                            <span className='text-4xl text-primary'><SiFirebase /></span>
                         </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[85%]"></div>
+                        <div>
+                            <span className='text-4xl text-primary'><SiNodedotjs /></span>
                         </div>
-                    </div>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">Firebase</span>
+                        <div>
+                            <span className='text-4xl text-primary'><SiMongodb /></span>
                         </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[75%]"></div>
-                        </div>
-                    </div>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">MongoDB</span>
-                        </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[60%]"></div>
-                        </div>
-                    </div>
-                    <div className='my-3'>
-                        <div class="flex justify-between mb-2">
-                            <span class="font-medium text-gray">Node.js</span>
-                        </div>
-                        <div class="w-full bg-base-100 rounded-full h-1.5">
-                            <div class="bg-secondary h-1.5 rounded-full w-[65%]"></div>
-                        </div>
+
                     </div>
                 </div>
                 <div className='flex-none w-[10%]'>
                     <div className='flex flex-col gap-5 justify-center items-center'>
                         <div className='h-36 bg-base-200 w-0.5'></div>
-                        <p className='text-center uppercase text-base-300 text-xl'>Skills</p>
+                        <p className='text-center uppercase text-primary text-xl'>Skills</p>
                         <div className='h-36 bg-base-200 w-0.5'></div>
                     </div>
                 </div>

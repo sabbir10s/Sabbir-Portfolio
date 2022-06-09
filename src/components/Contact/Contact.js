@@ -26,7 +26,7 @@ const Contact = () => {
                 position="top-center"
                 reverseOrder={false}
             />
-            <h1 id="contact" className='text-4xl uppercase text-center my-12'>Contact Me</h1>
+            <h1 id="contact" className='text-4xl text-primary uppercase text-center my-12'>Contact Me</h1>
             <div className='mx-32 mb-12'>
                 <div className='grid gap-5 grid-cols-2 '>
                     <div style={{

@@ -24,7 +24,7 @@ const Home = () => {
                     <a href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download' className='bg-base text-primary  text-2xl flex justify-center items-center  h-12 w-12 rounded-full shadow-2xl'><AiOutlineDownload /></a>
                 </div>
                 <div className='text-center mt-14'>
-                    <h1 className='text-xl text-secondary  mt-3'>React Developer</h1>
+                    <h1 className='text-xl text-secondary  mt-3'>Front-End Developer</h1>
                     <h1 className='text-5xl text-primary mt-3'>Sabbir Ahmed</h1>
 
                 </div>
