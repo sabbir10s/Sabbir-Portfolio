@@ -6,12 +6,13 @@ import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
 import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
 
 
 const Home = () => {
     return (
         <>
-            <div className='bg-base-100'>
+            <div className='bg-base-100 pb-10'>
                 <div className='bg-primary h-72'></div>
                 <div className='flex justify-center mt-[-90px] '>
                     <div className=' flex justify-center'>
@@ -20,7 +21,7 @@ const Home = () => {
 
                 </div>
                 <div className='flex justify-center ml-64 mt-[-85px]'>
-                    <button className='bg-base text-primary  text-2xl flex justify-center items-center  h-12 w-12 rounded-full shadow-2xl'><AiOutlineDownload /></button>
+                    <a href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download' className='bg-base text-primary  text-2xl flex justify-center items-center  h-12 w-12 rounded-full shadow-2xl'><AiOutlineDownload /></a>
                 </div>
                 <div className='text-center mt-14'>
                     <h1 className='text-xl text-secondary  mt-3'>React Developer</h1>
@@ -35,6 +36,7 @@ const Home = () => {
                 </div>
                 <About />
                 <Portfolio />
+                <Contact />
             </div>
         </>
     );
