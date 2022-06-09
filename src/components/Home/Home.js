@@ -30,9 +30,9 @@ const Home = () => {
                 </div>
 
                 <div className='flex justify-center items-center gap-5 py-5 text-base text-lg'>
-                    <a className='bg-secondary rounded-full p-2' href="https://www.facebook.com/"><GrLinkedinOption /></a>
-                    <a className='bg-secondary rounded-full p-2' href="https://www.facebook.com/"><AiOutlineGithub /></a>
-                    <a className='bg-secondary rounded-full p-2' href="https://www.facebook.com/"><FaFacebookF /></a>
+                    <a className='bg-secondary rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
+                    <a className='bg-secondary rounded-full p-2' href="https://github.com/sabbir10s" target="_blank"><AiOutlineGithub /></a>
+                    <a className='bg-secondary rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
                 </div>
                 <About />
                 <Portfolio />

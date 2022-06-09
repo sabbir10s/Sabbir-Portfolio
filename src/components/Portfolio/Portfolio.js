@@ -12,7 +12,7 @@ const Portfolio = () => {
     return (
         <>
             <div>
-                <h1 className='text-5xl text-center'><code>Portfolio_</code></h1>
+                <h1 className='text-4xl text-center uppercase'>Portfolio</h1>
                 <div className='mx-32 grid grid-cols-3 gap-5 mt-12'>
                     {
                         projects.map(project => <ProjectCart key={project._id} project={project} />)

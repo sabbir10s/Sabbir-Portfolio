@@ -1,9 +1,32 @@
 import React from 'react';
 import map from '../../img/map.png'
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
+
 const Contact = () => {
+
+    const sendEmail = e => {
+        e.preventDefault()
+        const name = e.target.name.value;
+        emailjs.sendForm('service_hejba76', 'template_xxcvyor', e.target, 'Eaihc3JItxJDAUTLh')
+            .then((result) => {
+                if (result.status === 200) {
+                    e.target.reset()
+                    toast.success(`Hey, ${name} your email successfully send`)
+                }
+            }, (error) => {
+                if (error) {
+                    toast.error(error.text)
+                }
+            });
+    }
     return (
         <>
-            <h1 className='text-5xl text-center my-12'><code>Contact Me_</code></h1>
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+            />
+            <h1 id="contact" className='text-4xl uppercase text-center my-12'>Contact Me</h1>
             <div className='mx-32 mb-12'>
                 <div className='grid gap-5 grid-cols-2 '>
                     <div style={{
@@ -34,13 +57,13 @@ const Contact = () => {
 
                     </div>
                     <div className='bg-base p-5 rounded-lg'>
-                        <form>
+                        <form onSubmit={sendEmail}>
                             <div className='flex gap-2'>
                                 <div class="mb-6 w-full">
                                     <input type="text" name='name' className="bg-base border border-primary text-gray text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Name' required />
                                 </div>
                                 <div class="mb-6 w-full">
-                                    <input type="email" name='email' className="bg-base border border-primary text-gray text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Email' required />
+                                    <input type="user_email" name='email' className="bg-base border border-primary text-gray text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Email' required />
                                 </div>
                             </div>
                             <div class="mb-6">

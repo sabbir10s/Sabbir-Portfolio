@@ -1,6 +1,8 @@
 import React from 'react';
 
 const About = () => {
+
+
     return (
         <>
             <div className='mt-28 uppercase mx-32'>
@@ -77,8 +79,8 @@ const About = () => {
                     <h2 className='text-4xl text-gray mb-7'><code>Hi_</code></h2>
                     <p className='text-gray text-justify'>I have experience in Front-End Technology with React and also have primary knowledge in Backend Technology with Node.js. I completed some MERN stack project which is fully responsive and looking very fantastic. Always I want to try to learn new features related to Programming and Development. I want to work with a team or a company to build up my career as a Front End Developer.</p>
                     <div className='flex gap-7 mt-7'>
-                        <button className='text-base uppercase text-sm px-5 py-2 bg-gray rounded-full border-2 border-secondary hover:bg-secondary'>Download CV</button>
-                        <button className='text-primary uppercase text-sm px-5 py-2 bg-base rounded-full border-2 border-gray hover:bg-gray hover:text-base-100'>Contact Me</button>
+                        <a href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download' className='text-base uppercase text-sm px-5 py-2 bg-gray rounded-full border-2 border-secondary hover:bg-secondary'>Download CV</a>
+                        <a href='#contact' className='text-primary uppercase text-sm px-5 py-2 bg-base rounded-full border-2 border-gray hover:bg-gray hover:text-base-100'>Contact Me</a>
                     </div>
                 </div>
             </div>
