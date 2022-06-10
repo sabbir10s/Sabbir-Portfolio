@@ -14,61 +14,63 @@ const About = () => {
 
 
     return (
-        <>
-            <div className='mt-36 lg:mt-28 uppercase mx-32'>
-                {/* <small>Who am i</small>
-                <h1 className='text-primary text-4xl   mb-7'>About Me</h1> */}
+        <div div className='bg-neutral h-screen flex flex-col justify-center'>
+            <div className='uppercase text-center'>
+                <small className='text-success'>Who am i</small>
+                <h1 className='text-success text-4xl  mb-7'>About Me</h1>
             </div>
-            <div className='bg-base rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-7'>
+            <div className=' rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-7'>
                 <div className='lg:shrink w-full lg:w-[45%]'>
                     <div className='grid grid-cols-3 gap-10 justify-items-center rounded-lg'>
                         <div>
-                            <span className='text-4xl text-primary'><SiHtml5 /></span>
+                            <span className='text-4xl text-warning'><SiHtml5 /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiCss3 /></span>
+                            <span className='text-4xl text-warning'><SiCss3 /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiTailwindcss /></span>
+                            <span className='text-4xl text-warning'><SiTailwindcss /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiBootstrap /></span>
+                            <span className='text-4xl text-warning'><SiBootstrap /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiJavascript /></span>
+                            <span className='text-4xl text-warning'><SiJavascript /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiReact /></span>
+                            <span className='text-4xl text-warning'><SiReact /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiFirebase /></span>
+                            <span className='text-4xl text-warning'><SiFirebase /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiNodedotjs /></span>
+                            <span className='text-4xl text-warning'><SiNodedotjs /></span>
                         </div>
                         <div>
-                            <span className='text-4xl text-primary'><SiMongodb /></span>
+                            <span className='text-4xl text-warning'><SiMongodb /></span>
                         </div>
 
                     </div>
                 </div>
                 <div className='flex-none lg:w-[10%]'>
                     <div className='flex lg:flex-col flex-row gap-5 justify-center items-center'>
-                        <div className='lg:h-36 bg-base-200 lg:w-0.5 h-0.5 w-32 my-10 lg:my-0'></div>
-                        <p className='text-center uppercase text-primary text-xl'>Skills</p>
-                        <div className='lg:h-36 bg-base-200 lg:w-0.5 h-0.5 w-32 my-10 lg:my-0'></div>
+                        <div className='lg:h-36 bg-success lg:w-0.5 h-0.5 w-32 my-10 lg:my-0'></div>
+                        <p className='text-center uppercase text-success text-xl'>Skills</p>
+                        <div className='lg:h-36 bg-success lg:w-0.5 h-0.5 w-32 my-10 lg:my-0'></div>
                     </div>
                 </div>
                 <div className='lg:shrink w-full lg:w-[45%]'>
-                    <h2 className='text-4xl text-gray mb-7'><code>Hi_</code></h2>
-                    <p className='text-gray text-justify'>I have experience in Front-End Technology with React and also have primary knowledge in Backend Technology with Node.js. I completed some MERN stack project which is fully responsive and looking very fantastic. Always I want to try to learn new features related to Programming and Development. I want to work with a team or a company to build up my career as a Front End Developer.</p>
+                    <h2 className='text-4xl text-success mb-7'><code>Hi_</code></h2>
+                    <p className='text-success text-justify'>I have experience in Front-End Technology with React and also have primary knowledge in Backend Technology with Node.js. I completed some MERN stack project which is fully responsive and looking very fantastic. Always I want to try to learn new features related to Programming and Development. I want to work with a team or a company to build up my career as a Front End Developer.</p>
                     <div className='flex gap-7 mt-7'>
-                        <a href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download' className='text-base uppercase text-sm px-5 py-2 bg-gray rounded-full border-2 border-secondary hover:bg-secondary'>Download CV</a>
-                        <a href='#contact' className='text-primary uppercase text-sm px-5 py-2 bg-base rounded-full border-2 border-gray hover:bg-gray hover:text-base-100'>Contact Me</a>
+
+                        <a href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download' className='text-base-100 uppercase text-sm px-5 py-2 bg-info rounded-full border-2 border-secondary hover:bg-secondary'>Download CV</a>
+
+                        <a href='#contact' className='text-primary uppercase text-sm px-5 py-2 bg-base rounded-full border-2 border-info hover:bg-info hover:text-base-100'>Contact Me</a>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

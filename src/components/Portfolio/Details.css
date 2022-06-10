@@ -1,0 +1,17 @@
+.project:hover .details {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c49b6662;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.project {
+  position: relative;
+  cursor: pointer;
+}

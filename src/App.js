@@ -1,13 +1,18 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
+import Navbar from './components/Navbar/Navbar';
+import ProjectDetails from './components/Portfolio/ProjectDetails';
 
 
 function App() {
   return (
     <>
-      <Home />
-      <Footer />
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/projectDetails/:projectId' element={<ProjectDetails />} />
+      </Routes>
     </>
   );
 }

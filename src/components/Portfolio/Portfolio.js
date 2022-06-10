@@ -5,14 +5,15 @@ const Portfolio = () => {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
-        fetch('data.json')
+        fetch('https://raw.githubusercontent.com/sabbir10s/server/main/projectData.json')
             .then(res => res.json())
             .then(data => setProjects(data))
     }, [])
+
     return (
         <>
-            <div>
-                <h1 className='text-4xl text-primary text-center uppercase'>Portfolio</h1>
+            <div className='bg-neutral h-screen flex flex-col justify-center'>
+                <h1 className='text-4xl text-success text-center uppercase'>Portfolio</h1>
                 <div className='lg:mx-32 grid grid-cols-1 md:grid-cols-3 gap-5 mt-12'>
                     {
                         projects.map(project => <ProjectCart key={project._id} project={project} />)

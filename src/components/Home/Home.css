@@ -1,0 +1,14 @@
+.resume-button {
+  z-index: 1;
+  position: relative;
+  transition: resume 100s;
+}
+.resume-button:hover + .resume {
+  z-index: 0;
+  margin-left: 20px;
+  position: absolute;
+  width: 120px;
+  display: block;
+  background-color: white;
+  text-align: center;
+}
