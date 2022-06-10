@@ -16,8 +16,8 @@ const About = () => {
     return (
         <>
             <div className='uppercase text-center'>
-                <small className='text-success'>Who am i</small>
-                <h1 className='text-success text-4xl  mb-7'>About Me</h1>
+                {/* <small className='text-success'>Who am i</small> */}
+                <h1 className='text-5xl text-base-100 opacity-50 font-bold uppercase text-center my-8'>About Me</h1>
             </div>
             <div id='about' className=' rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-7'>
                 <div className='lg:shrink w-full lg:w-[45%]'>
@@ -66,7 +66,7 @@ const About = () => {
 
                         <a href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download' className='text-base-100 uppercase text-sm px-5 py-2 bg-info rounded-full border-2 border-secondary hover:bg-secondary'>Download CV</a>
 
-                        <a href='#contact' className='text-primary uppercase text-sm px-5 py-2 bg-base rounded-full border-2 border-info hover:bg-info hover:text-base-100'>Contact Me</a>
+                        <a href='#contact' className='text-neutral uppercase text-sm px-5 py-2 bg-base-100 rounded-full border-2 border-info hover:bg-info hover:text-base-100'>Contact Me</a>
                     </div>
                 </div>
             </div>

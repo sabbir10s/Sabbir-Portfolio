@@ -30,7 +30,7 @@ const Contact = () => {
                 reverseOrder={false}
             />
             <div>
-                <h1 id="contact" className='text-5xl text-base-100 opacity-30 font-bold uppercase text-center mt-14'>Contact Me</h1>
+                <h1 id="contact" className='text-5xl text-base-100 opacity-50 font-bold uppercase text-center mt-14'>Contact Me</h1>
                 <div className='lg:mx-32'>
                     <div className='grid gap-5 lg:grid-cols-2 mt-12'>
                         <div style={{
@@ -78,21 +78,21 @@ const Contact = () => {
                             <form onSubmit={sendEmail}>
                                 <div className='flex gap-2'>
                                     <div class="mb-6 w-full">
-                                        <input type="text" name='name' className="bg-info border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Name' required />
+                                        <input type="text" name='name' className="bg-[#ffffff27] border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Name' required />
                                     </div>
                                     <div class="mb-6 w-full">
-                                        <input type="user_email" name='email' className="bg-info border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Email' required />
+                                        <input type="user_email" name='email' className="bg-[#ffffff27] border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Email' required />
                                     </div>
                                 </div>
                                 <div class="mb-6">
-                                    <input type="text" name='subject' className="bg-info border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Subject' required />
+                                    <input type="text" name='subject' className="bg-[#ffffff27] border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Subject' required />
                                 </div>
                                 <div>
-                                    <textarea rows="4" name='message' className="block p-2.5 w-full text-sm text-success bg-info rounded-lg border-0 focus:ring-secondary focus:border-secondary" placeholder="Message..."></textarea>
+                                    <textarea rows="4" name='message' className="bg-[#ffffff27] block p-2.5 w-full text-sm text-success rounded-lg border-0 focus:ring-secondary focus:border-secondary" placeholder="Message..."></textarea>
                                 </div>
 
                                 <div className='flex justify-end'>
-                                    <button className='bg-secondary text-base-100 py-2 px-5 rounded-full mt-6'>Send Message</button>
+                                    <button className='bg-secondary text-black py-2 px-5 rounded-full mt-6'>Send Message</button>
                                 </div>
                             </form>
                         </div>

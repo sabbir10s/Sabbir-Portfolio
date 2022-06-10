@@ -16,7 +16,7 @@ const ProjectDetails = () => {
     if (projects.length === 0) {
         return <p>Loading</p>
     }
-    console.log(projectId);
+
     const project = projects.find(p => p._id === projectId)
 
     const { imgOne, name, clientRepo, serverRepo, liveSite, technology, description } = project;
