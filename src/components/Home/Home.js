@@ -10,11 +10,14 @@ import './Home.css'
 const Home = () => {
     return (
         <>
-            <Banner />
-            <About />
-            <Portfolio />
-            <Contact />
-            <Footer />
+            <div className='bg-neutral'>
+                <Banner />
+                <About />
+                <Portfolio />
+                <Contact />
+                <Footer />
+            </div>
+
         </>
     );
 };

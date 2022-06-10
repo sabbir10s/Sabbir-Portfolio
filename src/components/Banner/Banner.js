@@ -8,9 +8,8 @@ import { GrLinkedinOption } from 'react-icons/gr';
 const Banner = () => {
     return (
         <>
-            <div className='bg-neutral h-screen'>
-                <div className='bg-neutral count-particles h-52 lg:h-72'>
-                    <span class="js-count-particles">--</span>
+            <div className='bg-neutral pb-20'>
+                <div className='bg-secondary h-52 lg:h-72'>
                 </div>
                 <div className='flex justify-center mt-[-90px] '>
                     <div className=' flex justify-center'>
@@ -41,7 +40,7 @@ const Banner = () => {
 
                 </div>
 
-                <div className='flex justify-center items-center gap-5 py-5 text-base text-lg'>
+                <div className='flex justify-center items-center gap-5 py-5 text-base-100 text-lg'>
                     <a className='bg-info text-primary rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
                     <a className='bg-info text-primary rounded-full p-2' href="https://github.com/sabbir10s" target="_blank"><AiOutlineGithub /></a>
                     <a className='bg-info text-primary rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>

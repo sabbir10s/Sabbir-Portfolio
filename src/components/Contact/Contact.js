@@ -29,8 +29,8 @@ const Contact = () => {
                 position="top-center"
                 reverseOrder={false}
             />
-            <div className='h-screen bg-neutral flex flex-col justify-center'>
-                <h1 id="contact" className='text-5xl text-base-100 opacity-30 font-bold uppercase text-center'>Contact Me</h1>
+            <div>
+                <h1 id="contact" className='text-5xl text-base-100 opacity-30 font-bold uppercase text-center mt-14'>Contact Me</h1>
                 <div className='lg:mx-32'>
                     <div className='grid gap-5 lg:grid-cols-2 mt-12'>
                         <div style={{

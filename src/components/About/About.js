@@ -14,12 +14,12 @@ const About = () => {
 
 
     return (
-        <div div className='bg-neutral h-screen flex flex-col justify-center'>
+        <>
             <div className='uppercase text-center'>
                 <small className='text-success'>Who am i</small>
                 <h1 className='text-success text-4xl  mb-7'>About Me</h1>
             </div>
-            <div className=' rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-7'>
+            <div id='about' className=' rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-7'>
                 <div className='lg:shrink w-full lg:w-[45%]'>
                     <div className='grid grid-cols-3 gap-10 justify-items-center rounded-lg'>
                         <div>
@@ -70,7 +70,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
