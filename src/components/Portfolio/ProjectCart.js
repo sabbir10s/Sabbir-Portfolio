@@ -26,4 +26,4 @@ const ProjectCart = ({ project }) => {
     );
 };
 
-export default ProjectCart;
+export default ProjectCart; 
