@@ -21,7 +21,7 @@ const Banner = () => {
                 <div className='flex justify-center ml-64 mt-[-85px]'>
                     <div className='flex'>
                         <a className='resume-button bg-primary text-secondary  text-2xl flex justify-center items-center  h-12 w-12 rounded-full shadow-2xl' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'><AiOutlineDownload /> </a>
-                        <span className='resume py-3 rounded-r-full'>Resume</span>
+                        <span className='resume py-3 rounded-r-full uppercase'>Resume</span>
                     </div>
                 </div>
                 <div className='text-center mt-14'>
