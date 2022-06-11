@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { FiGithub } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
 import { BsEyeFill } from 'react-icons/bs';
+import Loading from '../../Shared/Loading';
 
 const ProjectDetails = () => {
     const { projectId } = useParams()
@@ -17,7 +18,7 @@ const ProjectDetails = () => {
 
 
     if (projects.length === 0) {
-        return <p>Loading</p>
+        return <Loading />
     }
 
     const project = projects.find(p => p._id === projectId)

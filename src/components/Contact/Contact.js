@@ -77,14 +77,14 @@ const Contact = () => {
                         <div className='p-5 rounded-lg'>
                             <form onSubmit={sendEmail}>
                                 <div className='flex gap-2'>
-                                    <div class="mb-6 w-full">
+                                    <div className="mb-6 w-full">
                                         <input type="text" name='name' className="bg-[#ffffff27] border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Name' required />
                                     </div>
-                                    <div class="mb-6 w-full">
+                                    <div className="mb-6 w-full">
                                         <input type="user_email" name='email' className="bg-[#ffffff27] border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Email' required />
                                     </div>
                                 </div>
-                                <div class="mb-6">
+                                <div className="mb-6">
                                     <input type="text" name='subject' className="bg-[#ffffff27] border-0 text-success text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder='Subject' required />
                                 </div>
                                 <div>

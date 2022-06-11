@@ -1,6 +1,7 @@
 import React from 'react';
 import './Details.css'
 import { useNavigate } from 'react-router-dom';
+import Loading from '../../Shared/Loading';
 
 const ProjectCart = ({ project }) => {
     const { _id, name, imgOne, description } = project;
@@ -9,7 +10,7 @@ const ProjectCart = ({ project }) => {
         navigate(`/projectDetails/${id}`)
     }
     if (project.length === 0) {
-        return <p>Loading</p>
+        return <Loading />
     }
     return (
         <div className='bg-info rounded-lg shadow-2xl project'>
