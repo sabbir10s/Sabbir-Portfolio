@@ -12,7 +12,7 @@ const ProjectCart = ({ project }) => {
         return <p>Loading</p>
     }
     return (
-        <div className='bg-base-info rounded-lg shadow-2xl project'>
+        <div className='bg-info rounded-lg shadow-2xl project'>
             <img className='rounded-t-lg w-full' src={imgOne} alt="" />
             <div className='p-5'>
                 <p className='text-xl text-primary font-bold mb-2'>{name}</p>

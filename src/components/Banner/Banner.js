@@ -5,6 +5,7 @@ import { AiOutlineDownload } from 'react-icons/ai';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
+import './Banner.css'
 const Banner = () => {
     return (
         <>
@@ -20,7 +21,7 @@ const Banner = () => {
                 <div className='flex justify-center ml-64 mt-[-85px]'>
                     <div className='flex'>
                         <a className='resume-button bg-primary text-secondary  text-2xl flex justify-center items-center  h-12 w-12 rounded-full shadow-2xl' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'><AiOutlineDownload /> </a>
-                        <span className='resume hidden py-3 rounded-r-full'>Resume</span>
+                        <span className='resume py-3 rounded-r-full'>Resume</span>
                     </div>
                 </div>
                 <div className='text-center mt-14'>
@@ -41,9 +42,9 @@ const Banner = () => {
                 </div>
 
                 <div className='flex justify-center items-center gap-5 py-5 text-base-100 text-lg'>
-                    <a className='bg-info text-primary rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
-                    <a className='bg-info text-primary rounded-full p-2' href="https://github.com/sabbir10s" target="_blank"><AiOutlineGithub /></a>
-                    <a className='bg-info text-primary rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
+                    <a className='bg-info border border-secondary text-primary rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
+                    <a className='bg-info border border-secondary text-primary rounded-full p-2' href="https://github.com/sabbir10s" target="_blank"><AiOutlineGithub /></a>
+                    <a className='bg-info border border-secondary text-primary rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
 
 
                 </div>

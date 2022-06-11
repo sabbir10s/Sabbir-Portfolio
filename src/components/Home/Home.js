@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner';
 import Contact from '../Contact/Contact';
 import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
-import './Home.css'
+
 
 
 const Home = () => {

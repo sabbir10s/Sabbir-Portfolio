@@ -8,12 +8,13 @@ import ProjectDetails from './components/Portfolio/ProjectDetails';
 function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/home' element={<Home />} />
-        <Route path='/projectDetails/:projectId' element={<ProjectDetails />} />
-      </Routes>
+      <Navbar>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/projectDetails/:projectId' element={<ProjectDetails />} />
+        </Routes>
+      </Navbar>
     </>
   );
 }
