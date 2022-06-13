@@ -30,9 +30,9 @@ const Contact = () => {
                 reverseOrder={false}
             />
             <div>
-                <h1 id="contact" className='text-5xl text-base-100 opacity-50 font-bold uppercase text-center mt-14'>Contact Me</h1>
+                <h1 id="contact" className='text-4xl md:text-5xl lg:text-center md:mx-5 pl-3 text-base-100 opacity-50 font-bold uppercase lg:pt-24'>Contact Me</h1>
                 <div className='lg:mx-32'>
-                    <div className='grid gap-5 lg:grid-cols-2 mt-12'>
+                    <div className='grid gap-5 lg:grid-cols-2 justify-center items-start lg:my-16'>
                         <div style={{
                             background: `url(${map})`,
                             backgroundSize: 'cover'
@@ -71,9 +71,8 @@ const Contact = () => {
 
                                 </div>
                             </div>
-
-
                         </div>
+
                         <div className='p-5 rounded-lg'>
                             <form onSubmit={sendEmail}>
                                 <div className='flex gap-2'>

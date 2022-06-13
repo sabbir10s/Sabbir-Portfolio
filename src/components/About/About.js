@@ -14,12 +14,11 @@ const About = () => {
 
 
     return (
-        <>
-            <div className='uppercase text-center'>
-                {/* <small className='text-success'>Who am i</small> */}
-                <h1 className='text-5xl text-base-100 opacity-50 font-bold uppercase text-center my-8'>About Me</h1>
+        <section id='about' className='pt-24'>
+            <div>
+                <h1 className='uppercase text-4xl md:text-5xl text-base-100 opacity-50 font-bold lg:text-center pl-3 pb-5 md:px-7 lg:pb-16'>About Me</h1>
             </div>
-            <div id='about' className=' rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-7'>
+            <div className='rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-2 md:p-7'>
                 <div className='lg:shrink w-full lg:w-[45%]'>
                     <div className='grid grid-cols-3 gap-10 justify-items-center rounded-lg'>
                         <div>
@@ -60,7 +59,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='lg:shrink w-full lg:w-[45%]'>
-                    <h2 className='text-4xl text-success mb-7'><code>Hi_</code></h2>
+                    <h2 className='text-3xl md:text-4xl text-success mb-4'><code>Hi_</code></h2>
                     <p className='text-success text-justify'>I am Sabbir Ahmed. I have experience in Front-End Technology with React and also have primary knowledge in Backend Technology with Node.js. I completed some MERN stack project which is fully responsive and looking very fantastic. Always I want to try to learn new features related to Programming and Development. I want to work with a team or a company to build up my career as a Front End Developer.</p>
                     <div className='flex gap-7 mt-7'>
 
@@ -76,7 +75,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

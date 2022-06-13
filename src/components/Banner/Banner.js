@@ -25,8 +25,8 @@ const Banner = () => {
     }, []);
 
     return (
-        <>
-            <div className='bg-neutral cover pb-20'>
+        <section>
+            <div className='bg-neutral'>
                 <div className=' h-52 lg:h-62'>
                 </div>
                 <div className='flex justify-center mt-[-90px] '>
@@ -35,13 +35,11 @@ const Banner = () => {
                     </div>
 
                 </div>
-                <div className='flex justify-center ml-64 mt-[-85px] mb-14'>
-                    <div className='flex'>
-                        <a
-                            className='btn_effect w-10 h-10 flex justify-center items-center  bg-primary rounded-full tooltip tooltip-info hover:tooltip-open tooltip-right' data-tip="email"
-                            href='mailto:sabbirahmed1023@gmail.com'>
-                            <p className=' text-secondary text-4xl mt-[-5px]'>+</p> </a>
-                    </div>
+                <div className='flex justify-center ml-64 mt-[-85px] mb-[70px]'>
+                    <a
+                        className='btn_effect w-10 h-10 border-2 border-secondary flex justify-center items-center  bg-primary rounded-full tooltip tooltip-info hover:tooltip-open md:tooltip-right' data-tip="email"
+                        href='mailto:sabbirahmed1023@gmail.com'>
+                        <p className=' text-secondary text-3xl md:mt-[-5px]'>+</p> </a>
                 </div>
                 <h1 className='text-primary text-center text-5xl welcome mb-3'>Welcome!</h1>
                 <div className='mr-[190px] text-3xl md:text-4xl  md:mr-[220px]'>
@@ -79,7 +77,7 @@ const Banner = () => {
                         <FaFacebookF /></a>
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 

@@ -11,7 +11,7 @@ import Blogs from '../Blogs/Blogs';
 const Home = () => {
     return (
         <>
-            <div className='bg-neutral'>
+            <div className='bg-neutral '>
                 <Banner />
                 <About />
                 <Portfolio />

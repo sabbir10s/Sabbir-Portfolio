@@ -8,7 +8,7 @@ import ProjectDetails from './components/Portfolio/ProjectDetails';
 function App() {
 
   return (
-    <>
+    <div>
 
       <Navbar>
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path='/projectDetails/:projectId' element={<ProjectDetails />} />
         </Routes>
       </Navbar>
-    </>
+    </div>
   );
 }
 

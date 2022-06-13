@@ -33,7 +33,7 @@ const Navbar = ({ children }) => {
         };
     }, [y]);
 
-    // console.log(nav);
+    //bg-[#0a4569]
 
 
 
@@ -43,7 +43,7 @@ const Navbar = ({ children }) => {
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
                     {/* <!-- Navbar --> */}
-                    <div className="w-full md:px-10 navbar sticky top-0 z-50 bg-[#0a4569]">
+                    <div className="w-full md:px-10 md:py-10 navbar sticky top-0 z-50 bg-neutral shadow-xl">
 
                         <div className="flex-1 flex items-center lg:items-stretch lg:justify-start">
 
@@ -89,7 +89,9 @@ const Navbar = ({ children }) => {
                                         }
 
                                         <div>
-                                            <a className='border border-secondary hover:bg-neutral px-3 py-[6px] rounded' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>Resume</a>
+                                            <a
+                                                className='border border-secondary hover:bg-[#0a4569] px-3 py-[6px] rounded'
+                                                href='https://drive.google.com/file/d/14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR/view?usp=sharing' target='_blank'>Resume</a>
                                         </div>
                                     </div>
                                 </div>
