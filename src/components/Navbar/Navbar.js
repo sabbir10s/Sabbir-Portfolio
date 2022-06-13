@@ -4,7 +4,7 @@ import logo from '../../img/white-logo.png'
 
 
 const Navbar = ({ children }) => {
-    const location = useLocation()
+    const { pathname } = useLocation()
 
     //scroll start 
     const [nav, setNev] = useState(false)
@@ -43,7 +43,7 @@ const Navbar = ({ children }) => {
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
                     {/* <!-- Navbar --> */}
-                    <div className="w-full navbar sticky top-0 z-50 bg-[#0a4569]">
+                    <div className="w-full md:px-10 navbar sticky top-0 z-50 bg-[#0a4569]">
 
                         <div className="flex-1 flex items-center lg:items-stretch lg:justify-start">
 
@@ -72,14 +72,25 @@ const Navbar = ({ children }) => {
                             <ul className="menu menu-horizontal">
                                 <div className='flex flex-col-reverse items-center md:flex-row gap-0 md:gap-2 md:items-center mt-6 md:mt-0 '>
                                     <div className="menu-horizontal flex gap-10 text-white ">
-                                        <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
+
                                         {
-                                            location.pathname.split('/')[1] !== 'projectDetails' && <>
+                                            pathname.includes('projectDetails') && <>
+                                                <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
+                                            </>
+                                        }
+
+                                        {
+                                            pathname.split('/')[1] !== 'projectDetails' &&
+                                            <>
                                                 <div className='hover:text-secondary'><a href="#about">About</a></div>
                                                 <div className='hover:text-secondary'><a href="#portfolio">Portfolio</a></div>
                                                 <div className='hover:text-secondary'><a href="#contact">Contact</a></div>
                                             </>
                                         }
+
+                                        <div>
+                                            <a className='border border-secondary hover:bg-neutral px-3 py-[6px] rounded' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>Resume</a>
+                                        </div>
                                     </div>
                                 </div>
                             </ul>
@@ -97,14 +108,24 @@ const Navbar = ({ children }) => {
                     <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
                     <div className="menu p-4 overflow-y-auto w-52 md:w-72 bg-[#1977b1] text-white">
 
-                        <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
                         {
-                            location.pathname.split('/')[1] !== 'projectDetails' && <>
+                            pathname.includes('projectDetails') && <>
+                                <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
+
+                            </>
+                        }
+                        {
+                            pathname.split('/')[1] !== 'projectDetails' && <>
                                 <div className='hover:text-secondary mt-7'><a href="#about">About</a></div>
                                 <div className='hover:text-secondary mt-7'><a href="#portfolio">Portfolio</a></div>
                                 <div className='hover:text-secondary mt-7'><a href="#contact">Contact</a></div>
                             </>
                         }
+
+                        <div className='mt-7'>
+                            <a className='text-secondary font-bold' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>Resume</a>
+                        </div>
+
                     </div>
 
                 </div>

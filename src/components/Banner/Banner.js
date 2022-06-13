@@ -1,7 +1,6 @@
 import React from 'react';
 // import TypeAnimation from 'react-type-animation';
 import profile from '../../img/profile.png'
-import { AiOutlineDownload } from 'react-icons/ai';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
@@ -38,8 +37,10 @@ const Banner = () => {
                 </div>
                 <div className='flex justify-center ml-64 mt-[-85px] mb-14'>
                     <div className='flex'>
-                        <a className='resume-button bg-primary text-secondary  text-2xl p-2 rounded-full shadow-2xl tooltip hover:tooltip-open tooltip-right tooltip-secondary' data-tip="Resume" href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'><AiOutlineDownload /> </a>
-                        {/* <span className='resume py-3 rounded-r-full uppercase'>Resume</span> */}
+                        <a
+                            className='btn_effect w-10 h-10 flex justify-center items-center  bg-primary rounded-full tooltip tooltip-info hover:tooltip-open tooltip-right' data-tip="email"
+                            href='mailto:sabbirahmed1023@gmail.com'>
+                            <p className=' text-secondary text-4xl mt-[-5px]'>+</p> </a>
                     </div>
                 </div>
                 <h1 className='text-primary text-center text-5xl welcome mb-3'>Welcome!</h1>
@@ -61,11 +62,21 @@ const Banner = () => {
                 </div>
 
                 <div className='flex justify-center items-center gap-5 py-5 text-base-100 text-lg'>
-                    <a className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
-                    <a className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2' href="https://github.com/sabbir10s" target="_blank"><AiOutlineGithub /></a>
-                    <a className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
-
-
+                    <a
+                        className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2'
+                        href="https://www.linkedin.com/in/sabbir10s/"
+                        target="_blank">
+                        <GrLinkedinOption /></a>
+                    <a
+                        className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2'
+                        href="https://github.com/sabbir10s"
+                        target="_blank">
+                        <AiOutlineGithub /></a>
+                    <a
+                        className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2'
+                        href="https://www.facebook.com/sabbir10s/"
+                        target="_blank">
+                        <FaFacebookF /></a>
                 </div>
             </div>
         </>
