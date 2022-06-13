@@ -6,8 +6,10 @@ import ProjectDetails from './components/Portfolio/ProjectDetails';
 
 
 function App() {
+
   return (
     <>
+
       <Navbar>
         <Routes>
           <Route path='/' element={<Home />} />

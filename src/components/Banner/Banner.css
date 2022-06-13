@@ -1,17 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Oswald&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+.welcome {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.forMe {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
 .resume-button {
   z-index: 1;
   position: relative;
   transition: resume 100s;
 }
-/* .resume-button:hover + .resume {
-  z-index: 0;
-  margin-left: 20px;
-  position: absolute;
-  width: 120px;
-  display: block;
-  background-color: white;
-  text-align: center;
-} */
 .resume {
   display: none;
 }

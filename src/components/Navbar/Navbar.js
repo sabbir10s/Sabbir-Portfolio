@@ -1,16 +1,49 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../img/white-logo.png'
+
+
 const Navbar = ({ children }) => {
     const location = useLocation()
-    console.log(location.pathname.split('/')[1]);
+
+    //scroll start 
+    const [nav, setNev] = useState(false)
+
+    const handleNavigation = (e) => {
+        const window = e.currentTarget;
+
+        if (y > window.scrollY) {
+            setNev(true)
+            console.log("scrolling up");
+
+        } else if (y < window.scrollY) {
+            setNev(false)
+            console.log("scrolling down");
+        }
+        setY(window.scrollY);
+    };
+    const [y, setY] = useState(window.scrollY);
+
+    useEffect(() => {
+        window.addEventListener("scroll", (e) => handleNavigation(e));
+        console.log(window.addEventListener);
+        return () => {
+            // return a cleanup function to unregister our function since its gonna run multiple times
+            window.removeEventListener("scroll", (e) => handleNavigation(e));
+        };
+    }, [y]);
+
+    // console.log(nav);
+
+
+
     return (
         <nav className=''>
             <div className="drawer drawer-end ">
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content bg-neutral flex flex-col">
+                <div className="drawer-content flex flex-col">
                     {/* <!-- Navbar --> */}
-                    <div className="w-full navbar  lg:container mx-auto">
+                    <div className="w-full navbar sticky top-0 z-50 bg-[#0a4569]">
 
                         <div className="flex-1 flex items-center lg:items-stretch lg:justify-start">
 
@@ -38,16 +71,16 @@ const Navbar = ({ children }) => {
                         <div className="flex-none hidden lg:block">
                             <ul className="menu menu-horizontal">
                                 <div className='flex flex-col-reverse items-center md:flex-row gap-0 md:gap-2 md:items-center mt-6 md:mt-0 '>
-                                    <ul className="menu-horizontal flex gap-10 text-white bg-neutral">
-                                        <li className='hover:text-secondary'><Link to='/'>Home</Link></li>
+                                    <div className="menu-horizontal flex gap-10 text-white ">
+                                        <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
                                         {
                                             location.pathname.split('/')[1] !== 'projectDetails' && <>
-                                                <li className='hover:text-secondary'><a href="#about">About</a></li>
-                                                <li className='hover:text-secondary'><a href="#portfolio">Portfolio</a></li>
-                                                <li className='hover:text-secondary'><a href="#contact">Contact</a></li>
+                                                <div className='hover:text-secondary'><a href="#about">About</a></div>
+                                                <div className='hover:text-secondary'><a href="#portfolio">Portfolio</a></div>
+                                                <div className='hover:text-secondary'><a href="#contact">Contact</a></div>
                                             </>
                                         }
-                                    </ul>
+                                    </div>
                                 </div>
                             </ul>
                         </div>
@@ -62,17 +95,17 @@ const Navbar = ({ children }) => {
                 </div>
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                    <ul className="menu p-4 overflow-y-auto w-52 bg-[#0a192fc0] text-white">
+                    <div className="menu p-4 overflow-y-auto w-52 md:w-72 bg-[#1977b1] text-white">
 
-                        <li className='hover:text-secondary'><Link to='/'>Home</Link></li>
+                        <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
                         {
                             location.pathname.split('/')[1] !== 'projectDetails' && <>
-                                <li className='hover:text-secondary'><a href="#about">About</a></li>
-                                <li className='hover:text-secondary'><a href="#portfolio">Portfolio</a></li>
-                                <li className='hover:text-secondary'><a href="#contact">Contact</a></li>
+                                <div className='hover:text-secondary mt-7'><a href="#about">About</a></div>
+                                <div className='hover:text-secondary mt-7'><a href="#portfolio">Portfolio</a></div>
+                                <div className='hover:text-secondary mt-7'><a href="#contact">Contact</a></div>
                             </>
                         }
-                    </ul>
+                    </div>
 
                 </div>
             </div>

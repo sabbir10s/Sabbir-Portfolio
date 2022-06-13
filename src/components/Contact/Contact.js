@@ -40,21 +40,21 @@ const Contact = () => {
                             <div className='grid grid-cols-3 border-b border-dashed border-text-success py-5'>
                                 <div className='col-span-1 grid grid-cols-2 gap-5'>
                                     <strong className='text-secondary'> Address</strong>
-                                    <strong> :</strong>
+                                    <strong className='text-primary'> :</strong>
                                 </div>
                                 <p className=' col-span-2 text-success'>Debidwar, Cumilla, Bangladesh</p>
                             </div>
                             <div className='grid grid-cols-3 border-b border-dashed border-text-success py-5'>
                                 <div className='col-span-1 grid grid-cols-2 gap-5'>
                                     <strong className='text-secondary'> Phone</strong>
-                                    <strong> :</strong>
+                                    <strong className='text-primary'> :</strong>
                                 </div>
                                 <p className=' col-span-2 text-success'>+880 1864-607704</p>
                             </div>
                             <div className='grid grid-cols-3 border-b border-dashed border-text-success py-5'>
                                 <div className='col-span-1 grid grid-cols-2 gap-5'>
                                     <strong className='text-secondary'> Email</strong>
-                                    <strong> :</strong>
+                                    <strong className='text-primary'> :</strong>
                                 </div>
                                 <p className=' col-span-2 text-success'>sabbirahmed1023@gmail.com</p>
                             </div>
@@ -62,11 +62,11 @@ const Contact = () => {
                             <div className='grid grid-cols-3 border-b border-dashed border-text-success py-5'>
                                 <div className='col-span-1 grid grid-cols-2 gap-5'>
                                     <strong className='text-secondary'>Social</strong>
-                                    <strong> :</strong>
+                                    <strong className='text-primary'> :</strong>
                                 </div>
                                 <div className='col-span-2 flex gap-5 text-base text-lg'>
-                                    <a className='bg-base-100 rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
-                                    <a className='bg-base-100 rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
+                                    <a className='btn_effect border border-secondary bg-base-100 rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
+                                    <a className='btn_effect border border-secondary bg-base-100 rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
 
 
                                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className='flex justify-end'>
-                                    <button className='bg-secondary text-black py-2 px-5 rounded-full mt-6'>Send Message</button>
+                                    <button className='btn_effect bg-info border border-secondary text-primary py-2 px-5 rounded-full mt-6'>Send Message</button>
                                 </div>
                             </form>
                         </div>
