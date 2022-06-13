@@ -1,17 +1,34 @@
-.project:hover .details {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0a192f8a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
-}
-
-.project {
+.projectCart {
   position: relative;
-  cursor: pointer;
+}
+.cartImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.CartButtonHeader {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0a4569ce;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.projectCart:hover .CartButtonHeader {
+  bottom: 0;
+  height: 100%;
+}
+.CartButton {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

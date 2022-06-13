@@ -16,7 +16,7 @@ const About = () => {
     return (
         <section id='about' className='pt-24'>
             <div>
-                <h1 className='uppercase text-4xl md:text-5xl text-base-100 opacity-50 font-bold lg:text-center pl-3 pb-5 md:px-7 lg:pb-16'>About Me</h1>
+                <h1 className='uppercase text-4xl md:text-5xl text-base-100 opacity-50 font-bold lg:text-center pl-3 pb-5 md:px-7 lg:pb-10'>About Me</h1>
             </div>
             <div className='rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-2 md:p-7'>
                 <div className='lg:shrink w-full lg:w-[45%]'>
