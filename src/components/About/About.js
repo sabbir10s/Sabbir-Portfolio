@@ -9,7 +9,6 @@ import { SiFirebase } from 'react-icons/si';
 import { SiReact } from 'react-icons/si';
 import { SiBootstrap } from 'react-icons/si';
 import './About.css'
-
 const About = () => {
 
 
@@ -18,34 +17,34 @@ const About = () => {
             <div>
                 <h1 className='uppercase text-4xl md:text-5xl text-base-100 opacity-50 font-bold lg:text-center pl-3 pb-5 md:px-7 lg:pb-10'>About Me</h1>
             </div>
-            <div className='rounded-lg mb-16 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-2 md:p-7'>
+            <div className='rounded-lg mb-5 flex flex-col-reverse lg:flex-row items-center gap-5 lg:mx-32 p-2 md:p-7'>
                 <div className='lg:shrink w-full lg:w-[45%]'>
                     <div className='grid grid-cols-3 gap-10 justify-items-center rounded-lg'>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiHtml5 /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiCss3 /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiTailwindcss /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiBootstrap /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiJavascript /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiReact /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiFirebase /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiNodedotjs /></span>
                         </div>
-                        <div>
+                        <div className='logoShadow p-3'>
                             <span className='bg-primary text-4xl text-warning'><SiMongodb /></span>
                         </div>
 
@@ -75,6 +74,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
+
+
         </section>
     );
 };
