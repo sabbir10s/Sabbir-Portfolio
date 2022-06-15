@@ -43,7 +43,7 @@ const Navbar = ({ children }) => {
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content flex flex-col">
                     {/* <!-- Navbar --> */}
-                    <div className="w-full md:px-10 md:py-10 navbar sticky top-0 z-50 bg-neutral shadow-xl">
+                    <div className="w-full lg:px-32 md:py-10 navbar sticky top-0 z-50 bg-neutral shadow-xl">
 
                         <div className="flex-1 flex items-center lg:items-stretch lg:justify-start">
 
