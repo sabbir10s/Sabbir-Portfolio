@@ -2,7 +2,6 @@ import React from 'react';
 import map from '../../img/map.png'
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
-import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
 
@@ -30,14 +29,14 @@ const Contact = () => {
                 reverseOrder={false}
             />
             <div>
-                <h1 id="contact" className='text-4xl md:text-5xl lg:text-center md:mx-5 pl-3 text-base-100 opacity-50 font-bold uppercase lg:pt-24'>Contact Me</h1>
-                <div className='lg:mx-32'>
-                    <div className='grid gap-5 lg:grid-cols-2 justify-center items-start lg:my-16'>
+                <h1 id="contact" className='text-4xl md:text-5xl lg:text-center md:mx-5 px-2 text-base-100 opacity-50 font-bold uppercase pt-10 lg:pt-24 pb-16 lg:pb-20'>Contact Me</h1>
+                <div className='mx-2 md:mx-5 lg:mx-32'>
+                    <div className='grid gap-16 grid-cols-1 lg:grid-cols-2 justify-center items-start'>
                         <div style={{
                             background: `url(${map})`,
                             backgroundSize: 'cover'
-                        }} className='p-5 rounded-lg'>
-                            <div className='grid grid-cols-3 border-b border-dashed border-text-success py-5'>
+                        }}>
+                            <div className='grid grid-cols-3 border-b border-dashed border-text-success pb-5'>
                                 <div className='col-span-1 grid grid-cols-2 gap-5'>
                                     <strong className='text-secondary'> Address</strong>
                                     <strong className='text-primary'> :</strong>
@@ -73,7 +72,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className='p-5 rounded-lg'>
+                        <div>
                             <form onSubmit={sendEmail}>
                                 <div className='flex gap-2'>
                                     <div className="mb-6 w-full">

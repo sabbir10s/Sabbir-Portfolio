@@ -1,15 +1,13 @@
 import React from 'react';
-// import TypeAnimation from 'react-type-animation';
 import profile from '../../img/profile.png'
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
-import { MdOutlineDownloadDone } from 'react-icons/md';
 import TextTransition from 'react-text-transition';
 
 const TEXTS = [
+    "Front-end Developer",
     "Web Designer",
-    "Frontend Developer",
 ];
 
 const Banner = () => {
@@ -45,14 +43,9 @@ const Banner = () => {
                                 springConfig={{ stiffness: 50, damping: 20 }}
                             />
                         </h2>
-                        <div className='text-primary flex items-center gap-3 mt-5'>
-                            <span>CHECK MY RESUME</span>
-                            <a
-                                className='btn_effect text-info text-xl p-1 bg-primary rounded-full border hover:border-secondary'
-                                href='mailto:sabbirahmed1023@gmail.com'>
-                                <MdOutlineDownloadDone /></a>
-
-                        </div>
+                        <a
+                            className='btn_effect mt-4 py-1.5 rounded w-32 text-center border border-secondary text-primary hover:bg-info/70 hover:border-primary'
+                            href='mailto:sabbirahmed1023@gmail.com'>Get In Touch</a>
                     </div>
 
                     <div className=' col-span-1 flex justify-end'>

@@ -14,8 +14,8 @@ const ProjectCart = ({ project }) => {
         return <Loading />
     }
     return (
-        <div className='projectCart border border-secondary'>
-            <img className='cartImg' src={imgOne} alt="" />
+        <div className='projectCart border border-secondary rounded-lg'>
+            <img className='cartImg rounded-t-lg' src={imgOne} alt="" />
             <div className='p-5'>
                 <p className='text-xl text-primary font-bold mb-2'>{name}</p>
                 <p className='text-sm text-base-100'>{description.slice(0, 120)}...</p>
