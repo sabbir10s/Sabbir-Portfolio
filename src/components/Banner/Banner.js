@@ -24,7 +24,7 @@ const Banner = () => {
 
     return (
         <section>
-            <div className='mx-2 md:mx-5 lg:mx-32 h-[80vh] md:h-[90vh] flex flex-col justify-center'>
+            <div className='h-[80vh] md:h-[90vh] flex flex-col justify-center'>
 
                 <div className='grid grid-cols-3 lg:grid-cols-4 items-center'>
                     <div className=' hidden lg:display-block col-span-1 lg:flex justify-center'>

@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import logo from '../../img/white-logo.png'
 
 
-const Navbar = ({ children }) => {
+const Navbar = () => {
     const { pathname } = useLocation()
 
     //scroll start 
@@ -38,101 +38,88 @@ const Navbar = ({ children }) => {
 
 
     return (
-        <nav className=''>
-            <div className="drawer drawer-end ">
-                <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content flex flex-col">
-                    {/* <!-- Navbar --> */}
-                    <div className="w-full lg:px-32 md:py-10 navbar sticky top-0 z-50 bg-neutral shadow-xl">
+        <div class={nav === true ? " sticky top-0 z-50 bg-neutral shadow-xl" : ' bg-neutral shadow-xl'}>
+            <div className='py-6 px-2 md:px-5 lg:px-32 bg-[#0a192f]'>
+                <div className='flex justify-between'>
 
-                        <div className="flex-1 flex items-center lg:items-stretch lg:justify-start">
-
-                            <div className="flex-shrink-0 flex items-center">
-
-                                <Link to='/'>
-                                    <img
-                                        className="hidden lg:block h-8 w-auto"
-                                        src={logo}
-                                        alt="sabbir ahmed"
-                                    />
-                                </Link>
-                            </div>
-
-                            <div className="lg:hidden">
-                                <div className="flex">
-                                    <Link to='/'><img
-                                        className="block lg:hidden h-8 w-auto"
-                                        src={logo}
-                                        alt="sabbir ahmed"
-                                    /></Link>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex-none hidden lg:block">
-                            <ul className="menu menu-horizontal">
-                                <div className='flex flex-col-reverse items-center md:flex-row gap-0 md:gap-2 md:items-center mt-6 md:mt-0 '>
-                                    <div className="menu-horizontal flex gap-10 text-white ">
-
-                                        {
-                                            pathname.includes('projectDetails') && <>
-                                                <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
-                                            </>
-                                        }
-
-                                        {
-                                            pathname.split('/')[1] !== 'projectDetails' &&
-                                            <>
-                                                <div className='hover:text-secondary'><a href="#about">About</a></div>
-                                                <div className='hover:text-secondary'><a href="#portfolio">Portfolio</a></div>
-                                                <div className='hover:text-secondary'><a href="#contact">Contact</a></div>
-                                            </>
-                                        }
-
-                                        <div>
-                                            <a
-                                                className='border border-secondary hover:bg-[#0a4569] px-3 py-[6px] rounded'
-                                                href='https://drive.google.com/file/d/14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR/view?usp=sharing' target='_blank'>Resume</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                        <div className="flex-none lg:hidden">
-                            <label htmlFor="my-drawer-3" className="text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                            </label>
+                    <div className="lg:hidden">
+                        <div className="flex">
+                            <Link to='/'><img
+                                className="block lg:hidden h-8 w-auto"
+                                src={logo}
+                                alt="sabbir ahmed"
+                            /></Link>
                         </div>
                     </div>
-                    {/* <!-- Page content here --> */}
-                    {children}
+
+                    <div class="dropdown dropdown-end">
+                        <label tabIndex="0" className="text-white lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-[#1977b1] rounded-box w-52">
+                            <div className="menu p-4 overflow-y-auto w-52 md:w-72  text-white">
+
+                                {
+                                    pathname.includes('projectDetails') && <>
+                                        <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
+
+                                    </>
+                                }
+                                {
+                                    pathname.split('/')[1] !== 'projectDetails' && <>
+                                        <div className='hover:text-secondary mt-7'><a href="#about">About</a></div>
+                                        <div className='hover:text-secondary mt-7'><a href="#portfolio">Portfolio</a></div>
+                                        <div className='hover:text-secondary mt-7'><a href="#contact">Contact</a></div>
+                                    </>
+                                }
+
+                                <div className='mt-7'>
+                                    <a className='text-secondary font-bold' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>Resume</a>
+                                </div>
+
+                            </div>
+                        </ul>
+
+                    </div>
                 </div>
-                <div className="drawer-side">
-                    <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                    <div className="menu p-4 overflow-y-auto w-52 md:w-72 bg-[#1977b1] text-white">
-
-                        {
-                            pathname.includes('projectDetails') && <>
-                                <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
-
-                            </>
-                        }
-                        {
-                            pathname.split('/')[1] !== 'projectDetails' && <>
-                                <div className='hover:text-secondary mt-7'><a href="#about">About</a></div>
-                                <div className='hover:text-secondary mt-7'><a href="#portfolio">Portfolio</a></div>
-                                <div className='hover:text-secondary mt-7'><a href="#contact">Contact</a></div>
-                            </>
-                        }
-
-                        <div className='mt-7'>
-                            <a className='text-secondary font-bold' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>Resume</a>
+                <div>
+                    <div className="hidden lg:flex items-center justify-between">
+                        <div>
+                            <Link to='/'>
+                                <img
+                                    className="hidden lg:block h-8 w-auto"
+                                    src={logo}
+                                    alt="sabbir ahmed"
+                                />
+                            </Link>
                         </div>
+                        <div className="text-white flex gap-10">
 
+                            {
+                                pathname.includes('projectDetails') && <>
+                                    <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
+                                </>
+                            }
+
+                            {
+                                pathname.split('/')[1] !== 'projectDetails' &&
+                                <>
+                                    <div className='hover:text-secondary'><a href="#about">About</a></div>
+                                    <div className='hover:text-secondary'><a href="#portfolio">Portfolio</a></div>
+                                    <div className='hover:text-secondary'><a href="#contact">Contact</a></div>
+                                </>
+                            }
+
+                            <div>
+                                <a
+                                    className='border border-secondary hover:bg-[#0a4569] px-3 py-[6px] rounded'
+                                    href='https://drive.google.com/file/d/14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR/view?usp=sharing' target='_blank'>Resume</a>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
-        </nav>
+        </div>
     );
 };
 

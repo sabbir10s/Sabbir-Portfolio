@@ -15,9 +15,9 @@ const About = () => {
     return (
         <section id='about' className='pt-24'>
             <div>
-                <h1 className='uppercase text-4xl md:text-5xl text-base-100 opacity-50 font-bold lg:text-center px-2 md:px-7 pb-10 lg:pb-20'>About Me</h1>
+                <h1 className='uppercase text-4xl md:text-5xl text-base-100 opacity-50 font-bold lg:text-center pb-10 lg:pb-20'>About Me</h1>
             </div>
-            <div className='rounded-lg mb-5 flex flex-col-reverse lg:flex-row items-center gap-12 mx-2 md:mx-5 lg:mx-32'>
+            <div className='rounded-lg mb-5 flex flex-col-reverse lg:flex-row items-center gap-12'>
                 <div className='w-full'>
                     <div className='grid grid-cols-3 justify-items-center gap-10'>
                         <div className='logo-cart '>
