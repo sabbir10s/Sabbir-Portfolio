@@ -14,11 +14,11 @@ const Navbar = () => {
 
         if (y > window.scrollY) {
             setNev(true)
-            console.log("scrolling up");
+            // console.log("scrolling up");
 
         } else if (y < window.scrollY) {
             setNev(false)
-            console.log("scrolling down");
+            // console.log("scrolling down");
         }
         setY(window.scrollY);
     };
@@ -26,7 +26,7 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", (e) => handleNavigation(e));
-        console.log(window.addEventListener);
+        // console.log(window.addEventListener);
         return () => {
             // return a cleanup function to unregister our function since its gonna run multiple times
             window.removeEventListener("scroll", (e) => handleNavigation(e));
@@ -39,7 +39,7 @@ const Navbar = () => {
 
     return (
         <div class={nav === true ? " sticky top-0 z-50 bg-neutral shadow-xl" : ' bg-neutral shadow-xl'}>
-            <div className='py-6 px-2 md:px-5 lg:px-32 bg-[#0a192f]'>
+            <div className='py-6 max-w-[1200px] mx-auto px-2 md:px-5 lg:px-12 bg-[#0a192f]'>
                 <div className='flex justify-between'>
 
                     <div className="lg:hidden">
@@ -56,7 +56,7 @@ const Navbar = () => {
                         <label tabIndex="0" className="text-white lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex="0" className="dropdown-content menu p-2 shadow bg-[#1977b1] rounded-box w-52">
+                        <ul tabIndex="0" className="dropdown-content menu shadow bg-[#1977b1] rounded-box w-52">
                             <div className="menu p-4 overflow-y-auto w-52 md:w-72  text-white">
 
                                 {
@@ -73,8 +73,10 @@ const Navbar = () => {
                                     </>
                                 }
 
-                                <div className='mt-7'>
-                                    <a className='text-secondary font-bold' href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>Resume</a>
+                                <div className='my-7'>
+                                    <a
+                                        className='border border-secondary hover:bg-[#0a4569] px-3 py-[6px] rounded'
+                                        href='https://drive.google.com/file/d/14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR/view?usp=sharing' target='_blank'>Resume</a>
                                 </div>
 
                             </div>

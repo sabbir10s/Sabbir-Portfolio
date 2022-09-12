@@ -7,7 +7,7 @@ import TextTransition from 'react-text-transition';
 
 const TEXTS = [
     "Front-end Developer",
-    "Web Designer",
+    "React Developer",
 ];
 
 const Banner = () => {
@@ -24,7 +24,7 @@ const Banner = () => {
 
     return (
         <section>
-            <div className='h-[80vh] md:h-[90vh] flex flex-col justify-center'>
+            <div className='py-24'>
 
                 <div className='grid grid-cols-3 lg:grid-cols-4 items-center'>
                     <div className=' hidden lg:display-block col-span-1 lg:flex justify-center'>

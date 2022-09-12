@@ -1,6 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import ProjectDetails from './components/Portfolio/ProjectDetails';
@@ -9,7 +8,7 @@ import ProjectDetails from './components/Portfolio/ProjectDetails';
 function App() {
 
   return (
-    <div>
+    <div className='bg-neutral'>
 
       <Navbar />
       <Routes>
@@ -17,7 +16,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/projectDetails/:projectId' element={<ProjectDetails />} />
       </Routes>
-      <Footer />
+
     </div>
   );
 }
