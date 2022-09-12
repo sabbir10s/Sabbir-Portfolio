@@ -3,9 +3,10 @@ import './Details.css'
 import { useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading';
 import { BsEyeFill } from 'react-icons/bs';
+import { HiUserGroup } from 'react-icons/hi';
 
 const ProjectCart = ({ project }) => {
-    const { _id, name, imgOne, description, liveSite } = project;
+    const { _id, name, type, imgOne, description, liveSite } = project;
     const navigate = useNavigate()
     const handleProjectDetails = id => {
         navigate(`/projectDetails/${id}`)
@@ -19,7 +20,12 @@ const ProjectCart = ({ project }) => {
                 <img className='cartImg rounded-t-lg' src={imgOne} alt="" />
             </div>
             <div className='p-5'>
-                <p className='text-xl text-primary font-bold mb-2'>{name}</p>
+                <div className='mb-2 flex items-center justify-between'>
+                    <span className='text-xl text-primary font-bold mb-2'>{name} </span>
+                    <div className='text-secondary flex items-center gap-2 text-sm'>
+                        {type === 'team' && <><HiUserGroup /> <span>Team Project</span></>}
+                    </div>
+                </div>
                 <p className='text-sm text-base-100'>{description.slice(0, 120)}...</p>
             </div>
             <div className='CartButtonHeader'>

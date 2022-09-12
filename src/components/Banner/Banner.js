@@ -1,5 +1,4 @@
 import React from 'react';
-import profile from '../../img/profile.png'
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
@@ -28,7 +27,7 @@ const Banner = () => {
 
                 <div className='grid grid-cols-3 lg:grid-cols-4 items-center'>
                     <div className=' hidden lg:display-block col-span-1 lg:flex justify-center'>
-                        <img className='w-[220px] border-2 border-white p-2 rounded-full' src={profile} alt="" />
+                        <img className='w-[220px] border-2 border-white p-2 rounded-full' src='https://i.ibb.co/x8V1vkm/profile.jpg' alt="" />
                     </div>
 
                     <div className=' col-span-2 flex flex-col gap-1.5'>

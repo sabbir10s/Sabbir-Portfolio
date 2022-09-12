@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../img/white-logo.png'
 
 
 const Navbar = () => {
@@ -38,7 +37,7 @@ const Navbar = () => {
 
 
     return (
-        <div class={nav === true ? " sticky top-0 z-50 bg-neutral shadow-xl" : ' bg-neutral shadow-xl'}>
+        <div className={nav === true ? " sticky top-0 z-50 bg-neutral shadow-xl" : ' bg-neutral shadow-xl'}>
             <div className='py-6 max-w-[1200px] mx-auto px-2 md:px-5 lg:px-12 bg-[#0a192f]'>
                 <div className='flex justify-between'>
 
@@ -46,15 +45,15 @@ const Navbar = () => {
                         <div className="flex">
                             <Link to='/'><img
                                 className="block lg:hidden h-8 w-auto"
-                                src={logo}
+                                src='https://i.ibb.co/Sy0c7hN/white-logo.png'
                                 alt="sabbir ahmed"
                             /></Link>
                         </div>
                     </div>
 
-                    <div class="dropdown dropdown-end">
+                    <div className="dropdown dropdown-end">
                         <label tabIndex="0" className="text-white lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex="0" className="dropdown-content menu shadow bg-[#1977b1] rounded-box w-52">
                             <div className="menu p-4 overflow-y-auto w-52 md:w-72  text-white">
@@ -90,7 +89,7 @@ const Navbar = () => {
                             <Link to='/'>
                                 <img
                                     className="hidden lg:block h-8 w-auto"
-                                    src={logo}
+                                    src="https://i.ibb.co/Sy0c7hN/white-logo.png"
                                     alt="sabbir ahmed"
                                 />
                             </Link>

@@ -4,6 +4,7 @@ import { FiGithub } from 'react-icons/fi';
 import { FaGithub } from 'react-icons/fa';
 import { BsEyeFill } from 'react-icons/bs';
 import Loading from '../../Shared/Loading';
+import { HiUserGroup } from 'react-icons/hi';
 
 const ProjectDetails = () => {
     const { projectId } = useParams()
@@ -23,7 +24,7 @@ const ProjectDetails = () => {
 
     const project = projects.find(p => p._id === projectId)
 
-    const { imgOne, name, clientRepo, serverRepo, liveSite, technology, description } = project;
+    const { imgOne, name, type, clientRepo, serverRepo, liveSite, technology, description } = project;
     return (
         <div className='bg-[#0a192f] min-h-screen'>
             <div className='max-w-[1200px] mx-auto py-20 px-2 md:px-5 lg:px-12  '>
@@ -56,16 +57,18 @@ const ProjectDetails = () => {
                     </div>
 
                     <div className='mx-2'>
-                        <div className='flex flex-wrap mb-5 lg:justify-start gap-5 uppercase'>
-                            <p className='text-left text-4xl text-primary pt-10'>{name}</p>
-
+                        <div className='flex items-center mb-5 gap-5'>
+                            <p className='text-left text-4xl text-primary'>{name}</p>
+                            <div className='text-secondary flex items-center gap-1 text-lg'>
+                                {type === 'team' && <>(<HiUserGroup /> <span>Team Project</span>)</>}
+                            </div>
                         </div>
                         <p className='text-base-100'>{description}</p>
                         <div className='mt-5 pb-16'>
                             <p className='text-secondary font-bold my-5'>Technology Used </p>
                             <div className='flex flex-wrap gap-3 text-white'>
                                 {
-                                    technology.map(t => <p className='bg-[#c49b6615] px-5 text-sm py-1 rounded-lg'>{t}</p>)
+                                    technology.map((t, index) => <p key={index} className='bg-[#c49b6615] px-5 text-sm py-1 rounded-lg'>{t}</p>)
                                 }
                             </div>
                         </div>
