@@ -1,12 +1,11 @@
 import React from 'react';
-import { AiOutlineGithub } from 'react-icons/ai';
-import { FaFacebookF } from 'react-icons/fa';
+import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
 import { GrLinkedinOption } from 'react-icons/gr';
 import TextTransition from 'react-text-transition';
 
 const TEXTS = [
     "Front-end Developer",
-    "React Developer",
+    "Expert in MERN Stack",
 ];
 
 const Banner = () => {
@@ -63,9 +62,9 @@ const Banner = () => {
                                 <AiOutlineGithub /></a>
                             <a
                                 className='btn_effect hover:border-primary bg-info border border-secondary text-primary rounded-full p-2'
-                                href="https://www.facebook.com/sabbir10s/"
+                                href="https://twitter.com/sabbir10s"
                                 target="_blank">
-                                <FaFacebookF /></a>
+                                <AiOutlineTwitter /></a>
 
                             <span className=' w-[0.2px] bg-white/50 h-20'></span>
                             <span className='p-1 bg-primary/50'></span>

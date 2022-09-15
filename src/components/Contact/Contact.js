@@ -2,8 +2,8 @@ import React from 'react';
 import map from '../../img/map.png'
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
-import { FaFacebookF } from 'react-icons/fa';
 import { GrLinkedinOption } from 'react-icons/gr';
+import { AiOutlineTwitter } from 'react-icons/ai';
 
 const Contact = () => {
 
@@ -64,7 +64,7 @@ const Contact = () => {
                             </div>
                             <div className='col-span-2 flex gap-5 text-base text-lg'>
                                 <a className='btn_effect border border-secondary bg-base-100 rounded-full p-2' href="https://www.linkedin.com/in/sabbir10s/" target="_blank"><GrLinkedinOption /></a>
-                                <a className='btn_effect border border-secondary bg-base-100 rounded-full p-2' href="https://www.facebook.com/sabbir10s/" target="_blank"><FaFacebookF /></a>
+                                <a className='btn_effect border border-secondary bg-base-100 rounded-full p-2' href="https://twitter.com/sabbir10s" target="_blank"><AiOutlineTwitter /></a>
 
 
                             </div>
