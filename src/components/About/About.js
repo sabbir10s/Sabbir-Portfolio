@@ -105,7 +105,7 @@ const About = () => {
                 </div>
                 <div className='w-full'>
                     <h2 className='text-3xl md:text-4xl text-success mb-4'><code>Hi_</code></h2>
-                    <p className='text-success text-justify'>I am Sabbir Ahmed. I have experience in Front-End Technology with React and also have primary knowledge in Backend Technology with Node.js. I completed some MERN stack project which is fully responsive and looking very fantastic. Always I want to try to learn new features related to Programming and Development. I want to work with a team or a company to build up my career as a Front End Developer.</p>
+                    <p className='text-success text-justify'>I am Sabbir Ahmed. As a curious learner, I love to explore new features related to Programming and Development. Last 1 year I completed more than 4 MERN stack projects which are fully dynamic & responsive. Recently I worked with a team to build up an online event scheduling website. Where I learned how to contribute to a team project. Now I want to work with a team or a company to build up my career as a Web Developer.</p>
                     <div className='flex gap-7 mt-7'>
 
                         <a

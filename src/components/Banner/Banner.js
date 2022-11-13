@@ -1,16 +1,20 @@
 import React from 'react';
-import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai';
+import { useState } from 'react';
+import { AiOutlineGithub, AiOutlineTwitter, AiOutlineMail } from 'react-icons/ai';
 import { GrLinkedinOption } from 'react-icons/gr';
+import { MdOutlineDone } from 'react-icons/md';
 import TextTransition from 'react-text-transition';
 
 const TEXTS = [
-    "Front-end Developer",
+    "Web Developer",
     "Expert in MERN Stack",
 ];
 
 const Banner = () => {
 
     const [index, setIndex] = React.useState(0);
+
+    const [copied, setCopied] = useState(false)
 
     React.useEffect(() => {
         const intervalId = setInterval(() =>
@@ -19,6 +23,11 @@ const Banner = () => {
         );
         return () => clearTimeout(intervalId);
     }, []);
+
+    const handleCopyToClipboard = (eventURL) => {
+        navigator.clipboard.writeText(eventURL);
+        setCopied(true)
+    };
 
     return (
         <section>
@@ -41,9 +50,15 @@ const Banner = () => {
                                 springConfig={{ stiffness: 50, damping: 20 }}
                             />
                         </h2>
-                        <a
-                            className='btn_effect mt-4 py-1.5 rounded w-32 text-center border border-secondary text-primary hover:bg-info/70 hover:border-primary'
-                            href='mailto:sabbirahmed1023@gmail.com'>Get In Touch</a>
+                        <button
+                            onClick={() => handleCopyToClipboard('sabbirahmed1023@gmail.com')}
+                            className='btn_effect mt-4 py-1.5 rounded w-32 text-center border border-secondary text-primary hover:bg-info/70 hover:border-primary'>
+                            {
+                                copied === false ? <p className='flex justify-center items-center gap-1'><AiOutlineMail className='text-xl' /> <span> Mail Me</span></p>
+                                    :
+                                    <p className='flex justify-center items-center'><span>Email Copied</span> <MdOutlineDone className='text-green-400 text-xl font-bold' /></p>
+                            }
+                        </button>
                     </div>
 
                     <div className=' col-span-1 flex justify-end'>
