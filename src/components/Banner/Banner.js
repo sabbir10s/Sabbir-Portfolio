@@ -6,7 +6,7 @@ import { MdOutlineDone } from 'react-icons/md';
 import TextTransition from 'react-text-transition';
 
 const TEXTS = [
-    "Web Developer",
+    "Front End Developer",
     "Expert in MERN Stack",
 ];
 
@@ -34,31 +34,32 @@ const Banner = () => {
             <div className='py-24'>
 
                 <div className='grid grid-cols-3 lg:grid-cols-4 items-center'>
-                    <div className=' hidden lg:display-block col-span-1 lg:flex justify-center'>
-                        <img className='w-[220px] border-2 border-white p-2 rounded-full' src='https://i.ibb.co/x8V1vkm/profile.jpg' alt="" />
-                    </div>
-
-                    <div className=' col-span-2 flex flex-col gap-1.5'>
-                        <h2 className='text-primary text-xl md:text-4xl'>I’AM</h2>
-                        <h1 className='text-secondary font-bold text-3xl md:text-6xl'>SABBIR AHMED</h1>
-                        <h2 className='text-primary text-xl md:text-3xl text-left uppercase'>
-                            <TextTransition
-                                text={TEXTS[index % TEXTS.length]}
-                                direction="down"
-                                inline
-                                noOverflow
-                                springConfig={{ stiffness: 50, damping: 20 }}
-                            />
-                        </h2>
-                        <button
-                            onClick={() => handleCopyToClipboard('sabbirahmed1023@gmail.com')}
-                            className='btn_effect mt-4 py-1.5 rounded w-32 text-center border border-secondary text-primary hover:bg-info/70 hover:border-primary'>
-                            {
-                                copied === false ? <p className='flex justify-center items-center gap-1'><AiOutlineMail className='text-xl' /> <span> Mail Me</span></p>
-                                    :
-                                    <p className='flex justify-center items-center'><span>Email Copied</span> <MdOutlineDone className='text-green-400 text-xl font-bold' /></p>
-                            }
-                        </button>
+                    <div className='col-span-2 lg:col-span-3 flex flex-col lg:flex-row lg:items-center gap-8'>
+                        <div className='display-block'>
+                            <img className='w-[170px] lg:w-[220px] border-2 border-white p-2 rounded-full' src='https://i.ibb.co/x8V1vkm/profile.jpg' alt="" />
+                        </div>
+                        <div>
+                            <h2 className='text-primary text-xl md:text-4xl'>I’AM</h2>
+                            <h1 className='text-secondary font-bold text-3xl md:text-6xl'>SABBIR AHMED</h1>
+                            <h2 className='text-primary text-xl md:text-3xl text-left uppercase'>
+                                <TextTransition
+                                    text={TEXTS[index % TEXTS.length]}
+                                    direction="down"
+                                    inline
+                                    noOverflow
+                                    springConfig={{ stiffness: 50, damping: 20 }}
+                                />
+                            </h2>
+                            <button
+                                onClick={() => handleCopyToClipboard('sabbirahmed1023@gmail.com')}
+                                className='btn_effect mt-4 py-1.5 rounded w-32 text-center border border-secondary text-primary hover:bg-info/70 hover:border-primary'>
+                                {
+                                    copied === false ? <p className='flex justify-center items-center gap-1'><AiOutlineMail className='text-xl' /> <span> Mail Me</span></p>
+                                        :
+                                        <p className='flex justify-center items-center'><span>Email Copied</span> <MdOutlineDone className='text-green-400 text-xl font-bold' /></p>
+                                }
+                            </button>
+                        </div>
                     </div>
 
                     <div className=' col-span-1 flex justify-end'>

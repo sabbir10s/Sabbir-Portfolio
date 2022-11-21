@@ -15,7 +15,7 @@ const ProjectCart = ({ project }) => {
         return <Loading />
     }
     return (
-        <div className='projectCart border border-secondary rounded-lg'>
+        <div className='projectCart border border-secondary rounded-lg cursor-pointer'>
             <div className='bg-[#0a4569] rounded-t-lg'>
                 <img className='cartImg rounded-t-lg' src={imgOne} alt="" />
             </div>

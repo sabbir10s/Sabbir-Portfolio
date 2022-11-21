@@ -8,6 +8,7 @@ import { SiNodedotjs } from 'react-icons/si';
 import { SiFirebase } from 'react-icons/si';
 import { SiReact } from 'react-icons/si';
 import { SiBootstrap } from 'react-icons/si';
+import { AiOutlineDownload } from 'react-icons/ai';
 import './About.css'
 const About = () => {
 
@@ -109,9 +110,9 @@ const About = () => {
                     <div className='flex gap-7 mt-7'>
 
                         <a
-                            className='btn_effect text-base-100 uppercase text-sm px-5 py-2 bg-info rounded-full border-2 border-secondary hover:border-primary md:w-32'
+                            className='btn_effect text-base-100 uppercase text-sm px-5 py-2 bg-info rounded-full border-2 border-secondary hover:border-primary md:w-32 flex items-center justify-center gap-2'
                             href='https://drive.google.com/uc?id=14Va6VzPJWcntwFqTHnYJYuhVhRHj5DSR&export=download'>
-                            My Resume</a>
+                            <AiOutlineDownload className='font-bold text-xl' /> <span>Resume</span></a>
 
                         <a
                             className=' btn_effect text-primary uppercase text-sm px-5 py-2 rounded-full border-2 border-primary hover:border-secondary hover:bg-info hover:text-base-100 md:w-32'
