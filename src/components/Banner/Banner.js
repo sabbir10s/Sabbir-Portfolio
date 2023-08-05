@@ -7,7 +7,7 @@ import TextTransition from 'react-text-transition';
 
 const TEXTS = [
     "Front End Developer",
-    "Expert in MERN Stack",
+    "Web Enthusiast",
 ];
 
 const Banner = () => {
@@ -31,7 +31,7 @@ const Banner = () => {
 
     return (
         <section>
-            <div className='py-24'>
+            <div id='home' className='py-24'>
 
                 <div className='grid grid-cols-3 lg:grid-cols-4 items-center'>
                     <div className='col-span-2 lg:col-span-3 flex flex-col lg:flex-row lg:items-center gap-8'>
@@ -40,7 +40,7 @@ const Banner = () => {
                         </div>
                         <div>
                             <h2 className='text-primary text-xl md:text-4xl'>I’AM</h2>
-                            <h1 className='text-secondary font-bold text-3xl md:text-6xl'>SABBIR AHMED</h1>
+                            <h1 className='text-secondary font-bold text-3xl md:text-6xl my-1'>SABBIR AHMED</h1>
                             <h2 className='text-primary text-xl md:text-3xl text-left uppercase'>
                                 <TextTransition
                                     text={TEXTS[index % TEXTS.length]}

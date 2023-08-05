@@ -66,8 +66,9 @@ const Navbar = () => {
                                 }
                                 {
                                     pathname.split('/')[1] !== 'projectDetails' && <>
+                                        <div className='hover:text-secondary mt-7'><a href="#home">Home</a></div>
                                         <div className='hover:text-secondary mt-7'><a href="#about">About</a></div>
-                                        <div className='hover:text-secondary mt-7'><a href="#portfolio">Portfolio</a></div>
+                                        <div className='hover:text-secondary mt-7'><a href="#project">Projects</a></div>
                                         <div className='hover:text-secondary mt-7'><a href="#contact">Contact</a></div>
                                     </>
                                 }
@@ -99,14 +100,16 @@ const Navbar = () => {
                             {
                                 pathname.includes('projectDetails') && <>
                                     <div className='hover:text-secondary'><Link to='/'>Home</Link></div>
+
                                 </>
                             }
 
                             {
                                 pathname.split('/')[1] !== 'projectDetails' &&
                                 <>
+                                    <div className='hover:text-secondary'><a href="#home">Home</a></div>
                                     <div className='hover:text-secondary'><a href="#about">About</a></div>
-                                    <div className='hover:text-secondary'><a href="#portfolio">Portfolio</a></div>
+                                    <div className='hover:text-secondary'><a href="#project">Projects</a></div>
                                     <div className='hover:text-secondary'><a href="#contact">Contact</a></div>
                                 </>
                             }

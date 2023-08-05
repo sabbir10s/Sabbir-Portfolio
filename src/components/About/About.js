@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiHtml5 } from 'react-icons/si';
+import { SiHtml5, SiNextdotjs, SiTypescript } from 'react-icons/si';
 import { SiCss3 } from 'react-icons/si';
 import { SiMongodb } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
@@ -89,6 +89,22 @@ const About = () => {
                         <div className='logo-cart '>
                             <div className='logo-cart-inner'>
                                 <div className='logo-front logoShadow rounded flex justify-center items-center'>
+                                    <span className='text-warning text-4xl'><SiTypescript /></span>
+                                </div>
+                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >TypeScript</span></div>
+                            </div>
+                        </div>
+                        <div className='logo-cart '>
+                            <div className='logo-cart-inner'>
+                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
+                                    <span className='text-warning text-4xl'><SiNextdotjs /></span>
+                                </div>
+                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >NextJs</span></div>
+                            </div>
+                        </div>
+                        <div className='logo-cart '>
+                            <div className='logo-cart-inner'>
+                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
                                     <span className='text-warning text-4xl'><SiMongodb /></span>
                                 </div>
                                 <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >MongoDB</span></div>
@@ -106,7 +122,10 @@ const About = () => {
                 </div>
                 <div className='w-full'>
                     <h2 className='text-3xl md:text-4xl text-success mb-4'><code>Hi_</code></h2>
-                    <p className='text-success text-justify'>I am Sabbir Ahmed. As a curious learner, I love to explore new features related to Programming and Development. Last 1 year I completed more than 4 MERN stack projects which are fully dynamic & responsive. Recently I worked with a team to build up an online event scheduling website. Where I learned how to contribute to a team project. Now I want to work with a team or a company to build up my career as a Web Developer.</p>
+                    <p className='text-success text-justify'>I'm Sabir Ahmed, a skilled front-end developer with a 5-month internship experience. Proficient in JavaScript, React, Tailwind, and other essential front-end technologies. <br /><br /> I prioritize writing clean and efficient code for visually appealing and seamless websites across devices and browsers. I stay updated with the latest trends and best practices, always seeking to turn design concepts into interactive web experiences.
+                        <br /> <br />
+                        Now, I'm eager to contribute my skills and creativity to a dynamic and innovative team. I embrace new challenges and am committed to continuous growth as a front-end developer.Let's create exceptional web experiences together!
+                    </p>
                     <div className='flex gap-7 mt-7'>
 
                         <a

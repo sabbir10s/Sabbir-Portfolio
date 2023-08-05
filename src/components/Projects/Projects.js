@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProjectCart from './ProjectCart';
 
-const Portfolio = () => {
+const Projects = () => {
     const [projects, setProjects] = useState([])
 
     useEffect(() => {
@@ -12,8 +12,8 @@ const Portfolio = () => {
 
     return (
         <section>
-            <div id='portfolio' className='pt-16 lg:pt-24'>
-                <h1 className='text-4xl md:text-5xl text-base-100 opacity-50 font-bold uppercase lg:text-center mx-2 md:mx-5 pb-16'>Portfolio</h1>
+            <div id='project' className='pt-16 lg:pt-24'>
+                <h1 className='text-4xl md:text-5xl text-base-100 opacity-50 font-bold uppercase lg:text-center mx-2 md:mx-5 pb-16'>projects</h1>
                 <div className='pb-14 grid grid-cols-1 md:grid-cols-3 gap-16'>
                     {
                         projects.map(project => <ProjectCart key={project._id} project={project} />)
@@ -24,4 +24,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Projects;
