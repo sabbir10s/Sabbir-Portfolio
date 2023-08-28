@@ -50,7 +50,7 @@ const Banner = () => {
                                     springConfig={{ stiffness: 50, damping: 20 }}
                                 />
                             </h2>
-                            <button
+                            {/* <button
                                 onClick={() => handleCopyToClipboard('sabbirahmed1023@gmail.com')}
                                 className='btn_effect mt-4 py-1.5 rounded w-32 text-center border border-secondary text-primary hover:bg-info/70 hover:border-primary'>
                                 {
@@ -58,7 +58,11 @@ const Banner = () => {
                                         :
                                         <p className='flex justify-center items-center'><span>Email Copied</span> <MdOutlineDone className='text-green-400 text-xl font-bold' /></p>
                                 }
-                            </button>
+                            </button> */}
+                            <a
+                                className=' inline-block mt-4 btn_effect text-primary uppercase text-sm px-5 py-2 rounded-full border-2 border-primary hover:border-secondary hover:bg-info hover:text-base-100'
+                                href='#contact'>
+                                Contact Me</a>
                         </div>
                     </div>
 
