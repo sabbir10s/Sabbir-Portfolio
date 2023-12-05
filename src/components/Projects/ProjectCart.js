@@ -31,6 +31,7 @@ const ProjectCart = ({ project }) => {
             <div className='CartButtonHeader'>
                 <div className='CartButton flex justify-center items-center gap-7'>
                     <a
+                        rel="noreferrer"
                         target="_blank"
                         className=' hover:text-info text-primary text-3xl'
                         href={liveSite}>

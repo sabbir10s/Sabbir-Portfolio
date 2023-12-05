@@ -38,7 +38,7 @@ const Navbar = () => {
 
     return (
         <div className={nav === true ? " sticky top-0 z-50 bg-neutral shadow-xl" : ' bg-neutral shadow-xl'}>
-            <div className='py-6 max-w-[1200px] mx-auto px-2 md:px-5 lg:px-12 bg-[#0a192f]'>
+            <div className='py-6 container mx-auto px-2  bg-[#0a192f]'>
                 <div className='flex justify-between'>
 
                     <div className="lg:hidden">

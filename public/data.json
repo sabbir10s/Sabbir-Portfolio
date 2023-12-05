@@ -21,47 +21,47 @@
     ],
     "description": "I did this project with the team M.M.A Developers, here my role was Front End Developer. Here users can create online events and manage appointments through Google Meet. My contribution: Wireframe Design, UI Design, User Profile, Payment System, Event booking etc"
   },
-    {
-      "_id": "62a19fa533a482858e4f1a3e",
-      "imgOne": "https://i.ibb.co/JKN55kd/nexiq.png",
-      "imgTwo": "http://placehold.it/32x32",
-      "name": "NEXIQ",
-      "type": "personal",
-      "clientRepo": "https://github.com/sabbir10s/NEXIQ-client",
-      "serverRepo": "https://github.com/sabbir10s/NEXIQ-server",
-      "liveSite": "https://nexiq-1199a.web.app/",
-      "technology": [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Firebase",
-        "JWT",
-        "Hook Form",
-        "Stripe",
-        "Tailwind CSS"
-      ],
-      "description": "NEXIQ is a full-stack website. In this project, I implemented user role management. A general user can purchase any product, manage her all orders and be able to pay for the order. An admin can upload a new product, manage all orders, see all users, create another admin."
-    },
-    {
-      "_id": "62a19fa5110935289d4ebf18",
-      "imgOne": "https://i.ibb.co/BzKWNJM/bike-pro.jpg",
-      "imgTwo": "https://i.ibb.co/3cFSvH4/bikePro.jpg",
-      "name": "Bike Pro",
-      "type": "personal",
-      "clientRepo": "https://github.com/sabbir10s/bike-pro-client",
-      "serverRepo": "https://github.com/sabbir10s/bike-pro-server",
-      "liveSite": "https://bike-pro-d5b3f.web.app/",
-      "technology": [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Firebase",
-        "JWT",
-        "Hook Form",
-        "Tailwind CSS"
-      ],
-      "description": "With this website, one user will be able to keep track of all the products in his warehouse. On this website, users can delete, update, and add their product information. All user facilities are protected by firebase authentication."
-    }
-  ]
+  {
+    "_id": "62a19fa533a482858e4f1a3e",
+    "imgOne": "https://i.ibb.co/JKN55kd/nexiq.png",
+    "imgTwo": "http://placehold.it/32x32",
+    "name": "Keycap",
+    "type": "personal",
+    "clientRepo": "https://github.com/sabbir10s/NEXIQ-client",
+    "serverRepo": "https://github.com/sabbir10s/NEXIQ-server",
+    "liveSite": "https://nexiq-1199a.web.app/",
+    "technology": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "JWT",
+      "Hook Form",
+      "Stripe",
+      "Tailwind CSS"
+    ],
+    "description": "Keycap is a full-stack website. In this project, I implemented user role management. A general user can purchase any product, manage her all orders and be able to pay for the order. An admin can upload a new product, manage all orders, see all users, create another admin."
+  },
+  {
+    "_id": "62a19fa5110935289d4ebf18",
+    "imgOne": "https://i.ibb.co/BzKWNJM/bike-pro.jpg",
+    "imgTwo": "https://i.ibb.co/3cFSvH4/bikePro.jpg",
+    "name": "Bike Pro",
+    "type": "personal",
+    "clientRepo": "https://github.com/sabbir10s/bike-pro-client",
+    "serverRepo": "https://github.com/sabbir10s/bike-pro-server",
+    "liveSite": "https://bike-pro-d5b3f.web.app/",
+    "technology": [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "JWT",
+      "Hook Form",
+      "Tailwind CSS"
+    ],
+    "description": "With this website, one user will be able to keep track of all the products in his warehouse. On this website, users can delete, update, and add their product information. All user facilities are protected by firebase authentication."
+  }
+]

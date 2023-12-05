@@ -27,14 +27,15 @@ const ProjectDetails = () => {
     const { imgOne, name, type, clientRepo, serverRepo, liveSite, technology, description } = project;
     return (
         <div className='bg-[#0a192f] min-h-screen'>
-            <div className='max-w-[1200px] mx-auto py-20 px-2 md:px-5 lg:px-12  '>
-                <div className='grid lg:grid-cols-2 gap-5 justify-items-center items-center'>
+            <div className='container mx-auto pt-4 px-2'>
+                <div className='grid gap-5 justify-items-center items-center'>
                     <div className='flex flex-col justify-center items-center'>
                         <div>
-                            <img className='w-[500px] mb-10' src={imgOne} alt="projectPicture" />
+                            <img className='w-[800px] mb-10' src={imgOne} alt="projectPicture" />
                         </div>
                         <div className='flex'>
                             <a
+                                rel="noreferrer"
                                 target="_blank"
                                 className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-2 w-20 text-center text-primary py-1 rounded-lg border border-secondary'
                                 href={clientRepo}>
@@ -42,6 +43,7 @@ const ProjectDetails = () => {
 
                             {
                                 serverRepo.length > 5 && <a
+                                    rel="noreferrer"
                                     target="_blank"
                                     className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-2 w-20 text-center text-primary py-1 rounded-lg border border-secondary'
                                     href={serverRepo}>
@@ -49,6 +51,7 @@ const ProjectDetails = () => {
                             }
 
                             <a
+                                rel="noreferrer"
                                 target="_blank"
                                 className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-2 w-20 text-center text-primary py-1 rounded-lg border border-secondary'
                                 href={liveSite}>
