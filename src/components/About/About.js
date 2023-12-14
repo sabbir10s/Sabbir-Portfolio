@@ -10,6 +10,53 @@ import { SiReact } from 'react-icons/si';
 import { SiBootstrap } from 'react-icons/si';
 import { AiOutlineDownload } from 'react-icons/ai';
 import './About.css'
+const Skills = [
+    {
+        name: "HTML",
+        icon: <SiHtml5 />
+    },
+    {
+        name: "CSS",
+        icon: <SiCss3 />
+    },
+    {
+        name: "TailwindCSS",
+        icon: <SiTailwindcss />
+    },
+    {
+        name: "Bootstrap",
+        icon: <SiBootstrap />
+    },
+    {
+        name: "JavaScript",
+        icon: <SiJavascript />
+    },
+    {
+        name: "React",
+        icon: <SiReact />
+    },
+    {
+        name: "Firebase",
+        icon: <SiFirebase />
+    },
+    {
+        name: "Node.js",
+        icon: <SiNodedotjs />
+    },
+    {
+        name: "TypeScript",
+        icon: <SiTypescript />
+    },
+    {
+        name: "Next.js",
+        icon: <SiNextdotjs />
+    },
+    {
+        name: "MongoDB",
+        icon: <SiMongodb />
+    },
+
+]
 const About = () => {
 
 
@@ -20,96 +67,22 @@ const About = () => {
             </div>
             <div className='rounded-lg mb-5 flex flex-col-reverse lg:flex-row items-center gap-12'>
                 <div className='w-full'>
-                    <div className='grid grid-cols-3 justify-items-center gap-10'>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiHtml5 /></span>
+                    <div className='grid grid-cols-4 justify-items-center gap-6 md:gap-10'>
+                        {
+                            Skills.map(({ name, icon }, idx) => {
+                                return <div key={idx}>
+                                    <div className='logo-cart '>
+                                        <div className='logo-cart-inner'>
+                                            <div className='logo-front logoShadow rounded flex flex-col gap-3 justify-center items-center'>
+                                                <span className='text-warning text-4xl'>{icon}</span>
+                                                <span className='text-gray-400 text-xs'>{name}</span>
+                                            </div>
+                                            <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >{name} </span></div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >HTML5 </span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiCss3 /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >CSS3 </span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiTailwindcss /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >TailwindCSS </span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiBootstrap /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >Bootstrap</span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart'>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiJavascript /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >JavaScript</span></div>
-                            </div>
-                        </div>
-
-                        <div className='logo-cart'>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiReact /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >React</span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart'>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiFirebase /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >Firebase</span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiNodedotjs /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >Node.js</span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiTypescript /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >TypeScript</span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiNextdotjs /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >NextJs</span></div>
-                            </div>
-                        </div>
-                        <div className='logo-cart '>
-                            <div className='logo-cart-inner'>
-                                <div className='logo-front logoShadow rounded flex justify-center items-center'>
-                                    <span className='text-warning text-4xl'><SiMongodb /></span>
-                                </div>
-                                <div className='logo-back logoShadow text-warning  text-sm flex justify-center items-center'><span >MongoDB</span></div>
-                            </div>
-                        </div>
+                            })
+                        }
 
                     </div>
                 </div>
