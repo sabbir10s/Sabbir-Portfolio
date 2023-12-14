@@ -16,28 +16,21 @@ const WorkView = ({ project, index }) => {
     return (
         <div className={
             index + 1 === 2
-                ? "grid grid-cols-2 gap-14"
-                : "grid grid-cols-2 gap-14"
+                ? "grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-14"
+                : "grid grid-cols-1 xl:grid-cols-2 gap-6 xl:gap-14"
         }>
             <a
-                className={`relative ${index === 1 ? "order-2" : "order-1"
+                className={`relative ${index === 1 ? "xl:order-2" : "xl:order-1"
                     }`}
                 href={liveSite} rel="noreferrer"
                 target="_blank"
             >
                 <img className=' hover:scale-105 duration-1000' src={imgOne} alt="" />
-                {/* <a
-                    rel="noreferrer"
-                    target="_blank"
-                    className='absolute bottom-8 right-8 bg-secondary text-white p-4 rounded border-secondary'
-                    href={liveSite}>
-                    <FaExternalLinkAlt />
-                </a> */}
             </a>
-            <div className={`flex flex-col justify-between ${index === 1 ? "order-1" : "order-2"
+            <div className={`flex flex-col xl:gap-14 ${index === 1 ? "order-1" : "order-2"
                 }`}>
-                <div className=' space-y-4'>
-                    <div className='mb-2 flex items-center justify-between'>
+                <div className='order-2 xl:order-1 space-y-4'>
+                    <div className='mb-2  mt-6 xl:mt-0 flex items-center justify-between'>
                         <span className='text-4xl text-primary font-bold mb-2'>{name} </span>
                         <div className='text-secondary flex items-center gap-2 text-sm'>
                             {type === 'team' && <><HiUserGroup /> <span>Team Project</span></>}
@@ -50,9 +43,9 @@ const WorkView = ({ project, index }) => {
                         Details</button>
 
                 </div>
-                <div className='flex flex-wrap gap-3 text-white'>
+                <div className='order-1 xl:order-2 flex flex-wrap gap-3 text-white'>
                     {
-                        technology.map((t, index) => <p key={index} className='bg-[#c49b6615] px-5 text-xs py-1 rounded-lg'>{t}</p>)
+                        technology.map((t, index) => <p key={index} className='bg-[#c49b6615] px-3 xl:px-5 text-xs py-1 rounded-lg'>{t}</p>)
                     }
                 </div>
             </div>

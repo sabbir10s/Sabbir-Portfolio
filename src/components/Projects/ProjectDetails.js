@@ -37,31 +37,33 @@ const ProjectDetails = () => {
                             <a
                                 rel="noreferrer"
                                 target="_blank"
-                                className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-2 w-20 text-center text-primary py-1 rounded-lg border border-secondary'
+                                className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-6 py-2 text-center text-primary rounded-lg border border-secondary'
                                 href={clientRepo}>
-                                <span><FaGithub /></span>Client</a>
+                                <span><FaGithub /></span>Client Repo</a>
 
                             {
-                                serverRepo.length > 5 && <a
+                                serverRepo && <a
                                     rel="noreferrer"
                                     target="_blank"
-                                    className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-2 w-20 text-center text-primary py-1 rounded-lg border border-secondary'
+                                    className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-6 py-2 text-center text-primary rounded-lg border border-secondary'
                                     href={serverRepo}>
-                                    <span><FiGithub /></span>Server</a>
+                                    <span><FiGithub /></span>Server Repo</a>
                             }
 
-                            <a
-                                rel="noreferrer"
-                                target="_blank"
-                                className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-2 w-20 text-center text-primary py-1 rounded-lg border border-secondary'
-                                href={liveSite}>
-                                <span><BsEyeFill /></span>Live</a>
+                            {
+                                liveSite && <a
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    className='flex justify-center items-center gap-2 mx-1 hover:bg-[#c49b66] hover:text-info bg-info px-6 py-2 text-center text-primary rounded-lg border border-secondary'
+                                    href={liveSite}>
+                                    <span><BsEyeFill /></span>Live</a>
+                            }
                         </div>
                     </div>
 
                     <div className='mx-2'>
                         <div className='flex items-center mb-5 gap-5'>
-                            <p className='text-left text-4xl text-primary'>{name}</p>
+                            <p className='text-left text-2xl md:text-3xl lg:ext-4xl text-primary'>{name}</p>
                             <div className='text-secondary flex items-center gap-1 text-lg'>
                                 {type === 'team' && <>(<HiUserGroup /> <span>Team Project</span>)</>}
                             </div>
