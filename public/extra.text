@@ -1,0 +1,23 @@
+{
+  "_id": "62a19fa5d80987322f93e148",
+  "imgOne": "https://i.ibb.co/P4qtxzx/my-Scheduler-1.png",
+  "imgTwo": "https://i.ibb.co/h7HNQds/my-Scheduler-2.png",
+  "imgThree": "https://i.ibb.co/wWstbHK/my-Scheduler-3.png",
+  "name": "myScheduler",
+  "type": "team",
+  "clientRepo": "https://github.com/bmsani/myscheduler",
+  "serverRepo": "https://github.com/bmsani/Myscheduler-server",
+  "liveSite": "https://myscheduler-893bf.firebaseapp.com/",
+  "technology": [
+    "React.js",
+    "TypeScript",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Firebase",
+    "JWT",
+    "Hook Form",
+    "Tailwind CSS"
+  ],
+  "description": " 'My Scheduler' is an innovative online event scheduler that simplifies the process of creating and managing events, with a special emphasis on seamless integration with Google Meet for virtual meetings. As the Front End Developer on this project, I undertook key responsibilities that spanned both design and functionality."
+},
